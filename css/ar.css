@@ -1,0 +1,210 @@
+body {
+    text-align: right;
+    direction: rtl;
+}
+
+
+
+
+
+
+.search-header input {
+    padding-right: 15px;
+    padding-left: 60px;
+}
+
+.search-header button {
+    right: auto;
+    left: 5px;
+}
+
+
+.main-categories-header ul li a i {
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
+
+
+/* start cart index  */
+.cart-index {
+    left: auto;
+    right: 0;
+    transform: translateX(105%);
+}
+
+
+.close-cart-index {
+    right: 25px;
+}
+
+
+
+
+.text-product-cart-index {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+
+.delete-cart-index {
+    right: auto;
+    left: 5px;
+}
+
+.main-categories-res {
+    left: auto;
+    right: 0;
+    transform: translateX(105%);
+}
+
+.sub-categories-res {
+    left: auto;
+    right: 0;
+    transform: translateX(105%);
+}
+
+
+.icons-top-par ul {
+    justify-content: left;
+}
+
+.title-mission {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.title-mission::after {
+    left: auto;
+    right: 0;
+}
+
+
+.list-aboutus-index li::after {
+    left: auto;
+    right: 0;
+}
+
+
+
+.bg-img-services {
+    left: auto;
+    right: 0;
+}
+
+
+.sub-services-index::before {
+    right: 0;
+    left: auto;
+}
+
+
+
+
+
+.sub-services-index h2::after {
+    left: auto;
+    right: -20px;
+}
+
+
+.owl-prev {
+    transform: scaleX(-1);
+}
+
+.owl-nav {
+    right: auto;
+    left: 0;
+}
+
+
+.services-index::after {
+    background-position: left;
+    right: auto;
+    left: 0;
+}
+
+
+.links-products-tabs ul li a::after {
+    left: auto;
+    right: 0;
+}
+
+
+
+.links-speakers-index ul li a::before {
+    left: auto;
+    right: 0;
+}
+
+
+
+
+
+
+.search-modal button {
+    right: auto;
+    left: 0;
+}
+
+.search-modal input {
+    padding-right: 15px;
+    padding-left: 55px;
+}
+
+.main-categories-res i {
+    transform: scale(-1);
+    display: inline-block;
+}
+
+
+
+.main-categories-header:hover {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.sub-categories-header {
+    right: auto;
+    left: -100%;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: -3px 2px 5px #00000041;
+}
+
+.list-aboutus-index li {
+    padding-left: 0px;
+    padding-right: 40px;
+
+}
+
+.main-services-index {
+    direction: ltr;
+}
+
+.sub-services-index {
+    direction: rtl;
+}
+
+.dropdowm-language-f {
+
+    left: auto;
+    right: 0%;
+}
+
+.form-newsletter button {
+    right: auto;
+    left: 5px;
+}
+
+.ctm-btn2 i {
+    transform: scaleX(-1) rotate(-45deg);
+}
+
+.ctm-btn2:hover i {
+    transform: scaleX(-1) rotate(0deg);
+}

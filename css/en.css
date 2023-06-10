@@ -1,0 +1,207 @@
+body {
+    text-align: left;
+    direction: ltr;
+}
+
+
+
+
+
+
+.search-header input {
+    padding-right: 60px;
+}
+
+.search-header button {
+    right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start cart index  */
+.cart-index {
+    transform: translateX(-105%);
+}
+
+.close-cart-index {
+    right: 25px;
+}
+
+
+
+
+.text-product-cart-index {
+    padding-right: 40px;
+}
+
+
+.delete-cart-index {
+    right: 5px;
+}
+
+.main-categories-res {
+    transform: translateX(-105%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icons-top-par ul {
+    justify-content: right;
+}
+
+.title-mission {
+    padding-left: 15px;
+}
+
+.title-mission::after {
+    left: 0;
+}
+
+
+.list-aboutus-index li::after {
+    left: 0;
+}
+
+
+
+.bg-img-services {
+    left: 0;
+}
+
+
+.sub-services-index::before {
+    left: 0;
+}
+
+
+
+
+
+.sub-services-index h2::after {
+    left: -20px;
+}
+
+
+.owl-prev {
+    transform: scaleX(-1);
+}
+
+.owl-nav {
+    right: 0;
+}
+
+
+.services-index::after {
+    background-position: right;
+    right: 0;
+}
+
+
+.links-products-tabs ul li a::after {
+    left: 0;
+}
+
+
+
+.links-speakers-index ul li a::before {
+    left: 0;
+}
+
+
+
+
+
+
+.search-modal button {
+    right: 0;
+}
+
+.search-modal input {
+    padding-right: 55px;
+}
+
+
+.main-categories-header:hover {
+    border-radius: 10px 0 0 10px;
+}
+
+.sub-categories-header {
+    right: -100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
