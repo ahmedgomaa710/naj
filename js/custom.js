@@ -476,3 +476,11 @@ $(".animated-progress span").each(function () {
   );
 
 });
+
+
+
+// delete cart page
+$(".detete-prodect-cart").click(function(e) {
+  e.preventDefault();
+  $(this).parents(".table-cart tbody tr").fadeOut();
+})

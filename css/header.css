@@ -87,6 +87,7 @@ a.sub-element:hover {
 }
 
 .search-header input {
+  background: var(--color-white);
   height: 55px;
   border-radius: 30px;
   border: 1px solid var(--color-main);
