@@ -1,4 +1,5 @@
 $("#add_to_cart").click(function () {
+
   let title = $(this).data("title"),
     img = $(this).data("img"),
     price = $(this).data("price"),
@@ -21,6 +22,14 @@ $("#add_to_cart").click(function () {
 
   localStorage.setItem("cart", JSON.stringify(data));
   getCart();
+
+  $(this).html(`
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+  <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+</svg>
+Added Successfully
+  `)
 });
 
 function getCart() {
@@ -76,27 +85,27 @@ function getCart() {
           </div>
       </td>
   </tr>`);
-      data_cart_menu.push(`<li class="sub-product-cart-index">
+      data_cart_menu.push(`<li class="sub-product-cart-index" data-id="${value.id}">
       <a href="">
           <div class="img-product-cart-index">
-              <img src="images/p3.png" alt="">
+              <img src="${value.img}" alt="">
           </div>
           <div class="text-product-cart-index">
-              <h2>Anterior Direct Esthetic
-                  Restorations </h2>
+              <h2>${value.title} </h2>
               <p> It is a long established fact that a reader will be distracted by the readable
                   content of a page when looking at its layout ..</p>
-              <span> 2200 </span>
+              <span> ${discount} </span>
           </div>
       </a>
-      <div class="delete-cart-index">
-          <img src="images/trach.png" alt="">
-      </div>
+    <div class="delete-cart-index">
+        <img src="images/trach.png" alt="">
+    </div>
   </li>`);
     });
 
     $("#sub_total").text(sub_total);
     $("#total").text(sub_total);
+    $("#total-cart-index").text(sub_total);
     $("#all-items").html(data);
     $("#all-items-menu").html(data_cart_menu);
   } else {
@@ -107,7 +116,10 @@ function getCart() {
         </div>
         <h2> No products found </h2>
     </div>
-    `)
+    `);
+
+    $("#total-cart-index").text("0")
+
   }
 }
 
@@ -122,4 +134,16 @@ $(document).on("click", ".detete-prodect-cart", function (e) {
     filtered = cart.filter((item) => item.id !== id);
   localStorage.setItem("cart", JSON.stringify(filtered));
   getCart();
+});
+$(document).on("click", ".delete-cart-index", function (e) {
+  e.preventDefault();
+  let id =  $(this).closest("li").data("id");
+  console.log(id);
+
+  $(this).closest("li").remove();
+  let cart1 = JSON.parse(localStorage.getItem("cart")),
+    filtered = cart1.filter((item) => item.id !== id);
+  localStorage.setItem("cart", JSON.stringify(filtered));
+  getCart();
+
 });

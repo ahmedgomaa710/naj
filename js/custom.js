@@ -225,7 +225,7 @@ function close() {
   $(".dropdowm-language").slideUp();
   $(".dropdowm-language-f").slideUp();
   $(".main-categories-header").slideUp();
-  $(".cart-index").removeClass("active");
+  // $(".cart-index").removeClass("active");
   $(".main-categories-res").removeClass("active");
   $(".sub-categories-res").removeClass("active");
 
@@ -268,7 +268,7 @@ $("#menu-div a").click(function () {
 
 var $winl = $(window); // or $box parent container
 var $boxl = $(
-  "#menu-div, #times-ican , #times-icon2 , .main-categories-res  ,.cart-index ,.cart-header, .language-footer a , .dropdowm-language , .dropdowm-language-f , #click-categories , .language , .main-categories-header , .click-element-mune , .dropdowm-element-mune"
+  "#menu-div, #times-ican , #times-icon2 , .main-categories-res  , .cart-index ,.cart-header, .language-footer a , .dropdowm-language , .dropdowm-language-f , #click-categories , .language , .main-categories-header , .click-element-mune , .dropdowm-element-mune"
 );
 $winl.on("click.Bst", function (event) {
   if (
@@ -476,5 +476,4 @@ $(".animated-progress span").each(function () {
   );
 
 });
-
 
