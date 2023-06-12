@@ -279,7 +279,7 @@
                                         <span class="fa fa-star"></span>
                                     </div>
                                     <div class="price-product-details">
-                                        <span class="old-price"> 2300 SAR </span>
+                                        <span class="old-price" id="price"> 2300 SAR </span>
                                         <span> 2000 SAR </span>
                                     </div>
                                 </div>
@@ -688,7 +688,9 @@
 
 
                                 <div class="btn-addtocart">
-                                    <button><i class="fas fa-cart-plus"></i> Add To Cart </button>
+                                    <button id="add_to_cart" data-title="Anterior Direct Esthetic Restorations"
+                                        data-price="2000" data-discount="10" data-code="01" data-img="images/p4.png"><i
+                                            class="fas fa-cart-plus"></i> Add To Cart </button>
                                 </div>
 
                                 <div class="share-protact-detalis">
@@ -1152,7 +1154,7 @@
                 </div>
             </div>
             <div class="product-cart-index">
-                <ul>
+                <ul id="all-items-menu">
                     <li class="sub-product-cart-index">
                         <a href="">
                             <div class="img-product-cart-index">
@@ -1377,6 +1379,7 @@
 
 
     <script src="js/custom.js"></script>
+    <script src="js/cart.js"></script>
 
 
 

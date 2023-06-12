@@ -2206,13 +2206,6 @@
 /* --------- end achievements details --------  */
 /* -------------------------------------- */
 
-
-
-
-
-
-
-
 /* -------------------------------------- */
 /* -------------- start cart  ------------ */
 /* -------------------------------------- */
@@ -2406,7 +2399,7 @@
 
 .cart-summary {
   background-color: var(--color-white);
-  padding:  40px;
+  padding: 40px;
   border-radius: 20px;
   margin-top: 65px;
   box-shadow: 0 2px 5px #00000028;
@@ -2495,11 +2488,10 @@
   width: 100%;
 }
 
-.order-tracking ul li.completed .img-order-tracking  {
+.order-tracking ul li.completed .img-order-tracking {
   color: var(--color-white);
   background-color: var(--color-main);
 }
-
 
 .order-tracking ul li.completed h2 {
   color: var(--color-main);
@@ -2508,8 +2500,18 @@
 .order-tracking ul li.completed h2 span {
   border-color: var(--color-main);
 }
-
-
+.cart_empty {
+  width: 50%;
+  margin: 40px auto;
+}
+.img-cart_empty {
+  margin: 35px auto;
+  width: 320px;
+}
+.cart_empty h2 {
+  text-align: center;
+  font-size: 30px;
+}
 /* -------------------------------------- */
 /* -------------- end  cart  ------------ */
 /* -------------------------------------- */
