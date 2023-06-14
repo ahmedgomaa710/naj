@@ -36,11 +36,9 @@ function getCart() {
   let cart = JSON.parse(localStorage.getItem("cart")),
     data = [],
     data_cart_menu = [];
-    console.log(localStorage.getItem("cart"));
   if (localStorage.getItem("cart") != null && localStorage.getItem("cart") != '[]') {
     let sub_total = 0;
     $.each(cart, (index, value) => {
-      console.log(value);
       let discount = value.price - (value.price * value.discount) / 100;
       sub_total += discount;
       data.push(`<tr class="row-delete" data-id="${value.id}">
@@ -128,7 +126,7 @@ getCart();
 $(document).on("click", ".detete-prodect-cart", function (e) {
   e.preventDefault();
   let id = $(this).closest(".row-delete").data("id");
-  console.log(id);
+  // console.log(id);
   $(this).parents(".table-cart tbody tr").fadeOut();
   let cart = JSON.parse(localStorage.getItem("cart")),
     filtered = cart.filter((item) => item.id !== id);
@@ -138,7 +136,7 @@ $(document).on("click", ".detete-prodect-cart", function (e) {
 $(document).on("click", ".delete-cart-index", function (e) {
   e.preventDefault();
   let id =  $(this).closest("li").data("id");
-  console.log(id);
+  // console.log(id);
 
   $(this).closest("li").remove();
   let cart1 = JSON.parse(localStorage.getItem("cart")),
