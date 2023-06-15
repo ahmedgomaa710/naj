@@ -37,10 +37,12 @@ function getCart() {
     data = [],
     data_cart_menu = [];
   if (localStorage.getItem("cart") != null && localStorage.getItem("cart") != '[]') {
-    let sub_total = 0;
+    let sub_total = 0,
+       count_items = 0
     $.each(cart, (index, value) => {
       let discount = value.price - (value.price * value.discount) / 100;
       sub_total += discount;
+      count_items = index;
       data.push(`<tr class="row-delete" data-id="${value.id}">
       <td>
           <a href="product-details.html">
@@ -100,7 +102,7 @@ function getCart() {
     </div>
   </li>`);
     });
-
+    $("#count-items b").text(cart.length);
     $("#sub_total").text(sub_total);
     $("#total").text(sub_total);
     $("#total-cart-index").text(sub_total);

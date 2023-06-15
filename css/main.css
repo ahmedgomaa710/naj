@@ -2641,6 +2641,10 @@
   transition: all 0.3s linear;
 }
 
+.sub-memberships {
+  gap: 15px;
+}
+
 .text-memberships h2 {
   font-size: 25px;
   font-family: "font_bold";
@@ -3053,3 +3057,27 @@
 /* ----------------------------------------------------- */
 /* ----------------- end  authors  -------------- */
 /* ----------------------------------------------------- */
+
+/*========================================================
+================= start style myaccount ==================
+======================================================= */
+.title-my-account {
+  background-color: var(--color-main);
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px;
+  border-radius: 20px;
+  color: var(--color-white);
+}
+
+.sub-title-my-account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*========================================================
+================= start style myaccount ==================
+======================================================= */
