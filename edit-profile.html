@@ -219,11 +219,13 @@
 
 
             <div class="title-pages">
-                <h1>Authors</h1>
+                <h1>Edit Profile</h1>
                 <div class="breadcrump">
                     <a href="index.html">Home</a>
                     <i class="fa-solid fa-chevron-right"></i>
-                    <span>Authors</span>
+                    <a href="my-account.html">My Account</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Edit Profile</span>
                 </div>
             </div>
 
@@ -240,105 +242,107 @@
         <main id="app">
 
 
-
-            <section class="authors mr-section">
+            <section class="main-myaccount mr-section">
                 <div class="main-container">
-                    <div class="title-center">
-                        <h3>Authors</h3>
-                        <h2>Styleitaliano Authors</h2>
+
+                    <div class="title-my-account">
+                        <div class="sub-title-my-account">
+                            <div class="img-title-my-account">
+                                <img src="images/user3.png" alt="">
+                            </div>
+                            <div class="text-title-my-account">
+                                <h2>Username</h2>
+                                <p>username@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="delete-myaccount">
+                            <a href="" class="ctm-btn2"> Delete Account </a>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah2.png" alt="">
-                                    </div>
-                                    <h2>Marcin Krupinski</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
+
+                    <div class="main-myaccount">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="sidebar-myaccount">
+                                    <ul>
+                                        <li class="active"><a href="my-account.html">Profile </a></li>
+                                        <li><a href="profile-courses.html">Courses</a></li>
+                                        <li><a href="mybookings.html">My Bookings</a></li>
+                                        <li><a href="orders.html">Orders</a></li>
+                                        <li><a href="settings.html">Settings</a></li>
+                                        <li><a href="">Log out</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah3.png" alt="">
+
+                            <div class="col-lg-8">
+                                <div class="edit-profile">
+                                    <div class="title-myprofile">
+                                        <h2>My Profile :</h2>
                                     </div>
-                                    <h2>Angelo Putignano</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
+
+                                    <div class="form-edit-profile">
+                                        <form action="">
+                                            <div class="img-edit-profile">
+                                                <img src="images/user3.png" alt="">
+                                                <div class="chenge-img">
+                                                    <input type="file" id="chenge1" name="chenge-img">
+                                                    <label for="chenge1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                            fill="currentColor" class="bi bi-camera-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                                            <path
+                                                                d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                                                        </svg>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="input-form">
+                                                <input type="text" class="form-control" name="name"
+                                                    placeholder="Username :" value="Username :   Ahmed Mohamed">
+                                            </div>
+                                            <div class="input-form">
+                                                <input type="email" class="form-control" name="email"
+                                                    placeholder="E-mail :" value="E-mail :   username@gmail.com">
+                                            </div>
+                                            <div class="input-form">
+                                                <input type="tel" class="form-control" name="phone"
+                                                    placeholder="Mobile no. :" value="Mobile no. :   +096234467899">
+                                            </div>
+                                            <div class="input-form">
+                                                <input type="tel" class="form-control" name="phone"
+                                                    placeholder="Country :" value="Country :   Saudi Arabia">
+                                            </div>
+
+                                            <div class="btn-edit-profile">
+                                                <button class="ctm-btn2">Save</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <h2>Louis Hardan</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Jordi Manauta</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah2.png" alt="">
-                                    </div>
-                                    <h2>Marcin Krupinski</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah3.png" alt="">
-                                    </div>
-                                    <h2>Angelo Putignano</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Louis Hardan</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Jordi Manauta</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

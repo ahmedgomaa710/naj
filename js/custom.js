@@ -477,3 +477,23 @@ $(".animated-progress span").each(function () {
 
 });
 
+
+
+$(document).ready(function() {
+  var readURLprofile = function(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+              $('.img-edit-profile img').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+      }
+  }
+
+
+  $("#chenge1").on('change', function(){
+    readURLprofile(this);
+  });
+  
+});

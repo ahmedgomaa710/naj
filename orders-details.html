@@ -219,11 +219,15 @@
 
 
             <div class="title-pages">
-                <h1>Authors</h1>
+                <h1>Order Details</h1>
                 <div class="breadcrump">
                     <a href="index.html">Home</a>
                     <i class="fa-solid fa-chevron-right"></i>
-                    <span>Authors</span>
+                    <a href="my-account.html">My Account</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="orders.html">Orders</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Order Details</span>
                 </div>
             </div>
 
@@ -240,105 +244,408 @@
         <main id="app">
 
 
-
-            <section class="authors mr-section">
+            <section class="main-myaccount mr-section">
                 <div class="main-container">
-                    <div class="title-center">
-                        <h3>Authors</h3>
-                        <h2>Styleitaliano Authors</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah2.png" alt="">
-                                    </div>
-                                    <h2>Marcin Krupinski</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
+
+                    <div class="title-my-account">
+                        <div class="sub-title-my-account">
+                            <div class="img-title-my-account">
+                                <img src="images/user3.png" alt="">
+                            </div>
+                            <div class="text-title-my-account">
+                                <h2>Username</h2>
+                                <p>username@gmail.com</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah3.png" alt="">
-                                    </div>
-                                    <h2>Angelo Putignano</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Louis Hardan</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Jordi Manauta</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah2.png" alt="">
-                                    </div>
-                                    <h2>Marcin Krupinski</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah3.png" alt="">
-                                    </div>
-                                    <h2>Angelo Putignano</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Louis Hardan</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"> 
-                            <div class="sub-authors">
-                                <a href="authors-details.html">
-                                    <div class="img-sub-authors">
-                                        <img src="images/ah4.png" alt="">
-                                    </div>
-                                    <h2>Jordi Manauta</h2>
-                                    <p>StyleItaliano founder</p>
-                                </a>
-                            </div>
+
+                        <div class="delete-myaccount">
+                            <a href="" class="ctm-btn2"> Delete Account </a>
                         </div>
                     </div>
+
+                    <div class="main-myaccount">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="sidebar-myaccount">
+                                    <ul>
+                                        <li><a href="my-account.html">Profile </a></li>
+                                        <li><a href="profile-courses.html">Courses</a></li>
+                                        <li><a href="mybookings.html">My Bookings</a></li>
+                                        <li class="active"><a href="orders.html">Orders</a></li>
+                                        <li><a href="settings.html">Settings</a></li>
+                                        <li><a href="">Log out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-8">
+                                <div class="main-order-details">
+                                    <div class="title-order-details">
+                                        <h2> Order no. : <span>123456</span> </h2>
+                                    </div>
+
+
+                                    <div class="tabs-order-details">
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-1-tab" data-toggle="pill"
+                                                    href="#pills-1" role="tab" aria-controls="pills-1"
+                                                    aria-selected="true">Order Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2"
+                                                    role="tab" aria-controls="pills-2"
+                                                    aria-selected="false">Products</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3"
+                                                    role="tab" aria-controls="pills-3" aria-selected="false">Invoice</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+
+
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                                            aria-labelledby="pills-1-tab">
+
+                                            <div class="order-detail">
+                                                <div class="details-myprofile">
+                                                    <h2>Customer :</h2>
+                                                    <ul>
+                                                        <li> Name :<span> Ahmed Naser</span></li>
+                                                        <li> E-mail :<span>username@gmail.com</span></li>
+                                                        <li> Mobile no. :<span> +096234467899</span></li>
+                                                        <li> Country : <span> Saudi Arabia</span></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="status-updated">
+                                                    <div class="sub-order-detail">
+                                                        <h2>Order Status :</h2>
+                                                        <ul>
+                                                            <li> <span class="stats onpre-order"> On pre-order </span>
+                                                            </li>
+                                                            <li> <span class="stats payment-accepted">Awaiting Check
+                                                                    Payment</span> </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="sub-order-detail">
+                                                        <h2>Updated on :</h2>
+                                                        <ul>
+                                                            <li> 25 JAN 2023 , 03:00 pm </li>
+                                                            <li> 25 JAN 2023 , 03:00 pm</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="details-myprofile">
+                                                    <h2>Payment :</h2>
+                                                    <ul>
+                                                        <li> Transacsion ID :<span>2a890a788</span></li>
+                                                        <li> Payment Method :<span>Visa</span></li>
+                                                        <li> Amount :<span>500 SAR</span></li>
+                                                        <li> Date : <span> 25 JAN 2023 , 03:00 pm</span></li>
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-2" role="tabpanel"
+                                            aria-labelledby="pills-2-tab">
+
+
+
+                                            <div class="prodect-profile">
+                                                <table class="table">
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td>
+                                                                <a href="product-details.html">
+                                                                    <div class="prodect-cart-page">
+                                                                        <div class="img-prodect-cart-page">
+                                                                            <img src="images/n1.png" alt="">
+                                                                        </div>
+                                                                        <div class="text-prodect-cart-page">
+                                                                            <h3>Anterior Direct Esthetic
+                                                                                Restorations</h3>
+                                                                            <div class="rate">
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                            </td>
+                                                            <td>
+                                                                <div class="code-product"> 079 </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-product-cart">
+                                                                    <h3>2000 SAR</h3>
+                                                                    <span class="old-price">2300 SAR</span>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="product-details.html">
+                                                                    <div class="prodect-cart-page">
+                                                                        <div class="img-prodect-cart-page">
+                                                                            <img src="images/n1.png" alt="">
+                                                                        </div>
+                                                                        <div class="text-prodect-cart-page">
+                                                                            <h3>Anterior Direct Esthetic
+                                                                                Restorations</h3>
+                                                                            <div class="rate">
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                            </td>
+                                                            <td>
+                                                                <div class="code-product"> 079 </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-product-cart">
+                                                                    <h3>2000 SAR</h3>
+                                                                    <span class="old-price">2300 SAR</span>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="product-details.html">
+                                                                    <div class="prodect-cart-page">
+                                                                        <div class="img-prodect-cart-page">
+                                                                            <img src="images/n1.png" alt="">
+                                                                        </div>
+                                                                        <div class="text-prodect-cart-page">
+                                                                            <h3>Anterior Direct Esthetic
+                                                                                Restorations</h3>
+                                                                            <div class="rate">
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                            </td>
+                                                            <td>
+                                                                <div class="code-product"> 079 </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-product-cart">
+                                                                    <h3>2000 SAR</h3>
+                                                                    <span class="old-price">2300 SAR</span>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="product-details.html">
+                                                                    <div class="prodect-cart-page">
+                                                                        <div class="img-prodect-cart-page">
+                                                                            <img src="images/n1.png" alt="">
+                                                                        </div>
+                                                                        <div class="text-prodect-cart-page">
+                                                                            <h3>Anterior Direct Esthetic
+                                                                                Restorations</h3>
+                                                                            <div class="rate">
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star checked"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                                <span class="fa fa-star"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+
+                                                            </td>
+                                                            <td>
+                                                                <div class="code-product"> 079 </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-product-cart">
+                                                                    <h3>2000 SAR</h3>
+                                                                    <span class="old-price">2300 SAR</span>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-3" role="tabpanel"
+                                            aria-labelledby="pills-3-tab">
+
+
+                                            <div class="invoice">
+                                                <div class="details-invoice">
+                                                    <ul>
+                                                        <li>25 JAN 2023 , 03:00 pm</li>
+                                                        <li> INVOICE 70d4d7d0</li>
+                                                        <li> Ahmed Naser </li>
+                                                        <li> 6th st. , Riyadh , 12211 , Saudi Arabia </li>
+                                                        <li>username@gmail.com</li>
+                                                    </ul>
+                                                </div>
+
+                                                <table class="table">
+                                                    <tbody>
+
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Product</th>
+                                                                <th scope="col">Code</th>
+                                                                <th scope="col">Total</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Anterior Direct Esthetic Restorations</th>
+                                                            <td> 079 </td>
+                                                            <td>2000 SAR</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Anterior Direct Esthetic Restorations</th>
+                                                            <td> 079 </td>
+                                                            <td>2000 SAR</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Anterior Direct Esthetic Restorations</th>
+                                                            <td> 079 </td>
+                                                            <td>2000 SAR</td>
+                                                        </tr>
+
+                                                    </tbody>
+
+                                                    </tbody>
+                                                </table>
+
+
+                                                <div class="invoice-price">
+                                                    <ul>
+                                                        <li> <h3>Subtotal</h3> <span> 8000 SAR</span></li>
+                                                        <li> <h3>Tax</h3> <span> 100 SAR </span></li>
+                                                        <li> <h3>Discount</h3> <span>-50 SAR</span></li>
+                                                        <li> <h3>Total</h3> <span> 8050 SAR </span></li>
+                                                    </ul>
+                                                </div>
+
+
+                                                <p>Please pay within 15 days, Thank You for your business.</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
