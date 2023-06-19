@@ -5,7 +5,7 @@ AOS.init();
 
 setTimeout(() => {
   $(".loading").fadeOut(1000);
-}, 4000);
+}, 2000);
 
 window.onload = function () {
   setTimeout(() => {
@@ -25,6 +25,10 @@ $(".click-dropdown-mune").click(function (e1) {
 $(".language").click(function (e) {
   e.preventDefault();
   $(".dropdowm-language").slideToggle();
+});
+$(".sub-progress-video").click(function (e) {
+  e.preventDefault();
+  $(".dropdowm-progress").fadeToggle();
 });
 $(".language-footer a").click(function (e) {
   e.preventDefault();
@@ -497,3 +501,50 @@ $(document).ready(function() {
   });
   
 });
+
+
+
+
+// start otp
+let digitValidate = function (ele) {
+  console.log(ele.value);
+  ele.value = ele.value.replace(/[^0-9]/g, "");
+};
+
+let tabChange = function (val) {
+  let ele = document.querySelectorAll(".otp_input input");
+  if (ele[val - 1].value != "") {
+    ele[val].focus();
+  } else if (ele[val - 1].value == "") {
+    ele[val - 2].focus();
+  }
+};
+// end otp
+
+
+
+
+
+$("#play-video").click(function(e) {
+  e.preventDefault();
+  if($(this).hasClass("active")) {
+    $(".main-course-video").removeClass("active")
+    $("#play-video i").removeClass("fa-pause").addClass("fa-play"); 
+    $(this).removeClass("active");
+    $(".main-course-video video").get(0).pause(); 
+    setTimeout(() => {
+      $(this).css("opacity", 1);
+    }, 400);
+    
+
+  }else {
+    $("#play-video i").removeClass("fa-play").addClass("fa-pause"); 
+    $(this).addClass("active");
+    $(".main-course-video video").get(0).play(); 
+    $(this).addClass("active");
+    $(".main-course-video").addClass("active")
+    setTimeout(() => {
+      $(this).css("opacity", 0);
+    }, 400);
+  }
+})

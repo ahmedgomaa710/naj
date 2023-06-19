@@ -102,7 +102,9 @@ function getCart() {
     </div>
   </li>`);
     });
+    $(".cont-header").fadeIn();
     $("#count-items b").text(cart.length);
+    $(".cont-header").text(cart.length);
     $("#sub_total").text(sub_total);
     $("#total").text(sub_total);
     $("#total-cart-index").text(sub_total);
@@ -119,6 +121,7 @@ function getCart() {
     `);
 
     $("#total-cart-index").text("0")
+    $(".cont-header").fadeOut();
 
   }
 }

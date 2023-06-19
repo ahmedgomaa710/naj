@@ -52,7 +52,10 @@
     <div class="body_page  d-flex flex-column justify-content-between">
 
 
-        <section class="login-page">
+        <!-- =========================
+            == start signup =========
+        ========================== -->
+        <section class="signup login-page">
             <div class="row pg_none">
                 <div class="col-lg-7 pg_none">
                     <div class="title-login">
@@ -64,34 +67,54 @@
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="main-login">
+                    <div class="main-signup main-login">
                         <div class="logo-login">
                             <img src="images/Logo.svg" alt="">
                         </div>
                         <div class="text-login-main">
-                            <h2>Login </h2>
-                            <p>Don't have an account? <a href="signup.html">   Sign up</a></p>
+                            <h2>Sign up </h2>
+                            <p>Already have an account ?  <a href="login.html">Login</a></p>
                         </div>
 
-                        <div class="form-login">
+                        <div class="form-signup form-login">
                             <form action="">
+                                <div class="input-form">
+                                    <input type="text" class="form-control" name="name" placeholder="Username">
+                                    <img src="images/parson.png" alt="">
+    
+                                </div>
+
                                 <div class="input-form">
                                     <input type="email" class="form-control" name="email" placeholder="E-mail">
                                     <img src="images/mail.png" alt="">
+    
+                                </div>
 
+                                <div class="input-form arrow-select">
+                                    <select class="form-select form-control " name="country">
+                                        <option value="Country"> Country</option>
+                                        <option value="Country 1 ">Country 1 </option>
+                                        <option value="Country 2"> Country 2</option>
+                                    </select>
+                                    <img src="images/mark2.png" alt="">
                                 </div>
                                 <div class="input-form">
                                     <input type="Password" class="form-control" name="password" placeholder="Password">
                                     <img src="images/padlock.png" alt="">
                                 </div>
-                                <div class="input-remember">
-                                    <div class="sub-remember">
-                                        <input type="checkbox" id="remember" name="remember">
-                                        <label for="remember"> Remember me </label>
-                                    </div>
 
-                                    <a href="forget-passsword.html">Forgot Password ? </a>
+                                <div class="input-form">
+                                    <input type="Password" class="form-control" name="confirm_password" placeholder="Confirm Password">
+                                    <img src="images/padlock.png" alt="">
                                 </div>
+
+                                <div class="terms-form">
+                                     <input type="checkbox" id="terms" name="terms">
+                                    <label for="terms">I agree to the Terms of Service and Privacy Policy.</label>
+                                </div>
+
+
+                              
 
                                 <div class="btn-form-login">
                                     <button class="ctm-btn2">Login</button>
@@ -103,7 +126,9 @@
 
             </div>
         </section>
-
+        <!-- =========================
+            == end signup =========
+        ========================== -->
 
 
 
