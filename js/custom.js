@@ -524,7 +524,7 @@ let tabChange = function (val) {
 
 
 
-
+// play-video"
 $("#play-video").click(function(e) {
   e.preventDefault();
   if($(this).hasClass("active")) {
@@ -547,4 +547,15 @@ $("#play-video").click(function(e) {
       $(this).css("opacity", 0);
     }, 400);
   }
+})
+//end  play-video"
+
+
+
+
+
+$(".input-payment-method").click(function(e){
+  e.preventDefault()
+  $(this).next().slideToggle();
+  $(this).find("input").val(checked);
 })

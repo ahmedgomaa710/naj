@@ -282,65 +282,346 @@
                                 <h2>Confirm <span></span></h2>
                             </li>
                         </ul>
-                    </div>       
+                    </div>
                     <div class="main-payment-page">
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="select-payment-method">
                                     <h2>Select Payment Method :</h2>
                                     <form action="">
-                                        <div class="input-payment-method">
-                                            <input type="radio"  id="payment-1" name="payment" class="form-control">
-                                            <label for="payment-1"> 
+                                        <div class="sub-select-payment-method">
+                                            <div class="input-payment-method">
+                                                <input type="radio" id="payment-1" name="payment" class="form-control">
+                                                <label for="payment-1">
 
-                                                <h2>Visa</h2>
-                                                <img src="images/pu1.png" alt="">
-                                            </label>
+                                                    <h2>Visa</h2>
+                                                    <img src="images/pu1.png" alt="">
+                                                </label>
+                                            </div>
+
+                                            <div class="form-payment">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Cardholder's Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Card Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_month">
+                                                                <option value="Exp. Month"> Exp. Month</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_year">
+                                                                <option value="Exp. Month"> Exp. Year</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="CVC Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="sub-select-payment-method">
+                                            <div class="input-payment-method">
+                                                <input type="radio" id="payment-2" name="payment" class="form-control">
+                                                <label for="payment-2">
+
+                                                    <h2>Master Card</h2>
+                                                    <img src="images/pu2.png" alt="">
+                                                </label>
+                                            </div>
+                                            <div class="form-payment">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Cardholder's Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Card Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_month">
+                                                                <option value="Exp. Month"> Exp. Month</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_year">
+                                                                <option value="Exp. Month"> Exp. Year</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="CVC Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
 
-                                        <div class="input-payment-method">
-                                            <input type="radio"  id="payment-2" name="payment" class="form-control">
-                                            <label for="payment-2"> 
 
-                                                <h2>Master Card</h2>
-                                                <img src="images/pu2.png" alt="">
-                                            </label>
+                                        <div class="sub-select-payment-method">
+                                            <div class="input-payment-method">
+                                                <input type="radio" id="payment-3" name="payment" class="form-control">
+                                                <label for="payment-3">
+
+                                                    <h2>Apple Pay</h2>
+                                                    <img src="images/pu3.png" alt="">
+                                                </label>
+                                            </div>
+                                            <div class="form-payment">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Cardholder's Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Card Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_month">
+                                                                <option value="Exp. Month"> Exp. Month</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_year">
+                                                                <option value="Exp. Month"> Exp. Year</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="CVC Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
+                                        <div class="sub-select-payment-method">
+                                            <div class="input-payment-method">
+                                                <input type="radio" id="payment-4" name="payment" class="form-control">
+                                                <label for="payment-4">
 
+                                                    <h2>Mada</h2>
+                                                    <img src="images/pu4.png" alt="">
+                                                </label>
+                                            </div>
+                                            <div class="form-payment">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Cardholder's Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Card Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_month">
+                                                                <option value="Exp. Month"> Exp. Month</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_year">
+                                                                <option value="Exp. Month"> Exp. Year</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
-
-                                        <div class="input-payment-method">
-                                            <input type="radio"  id="payment-3" name="payment" class="form-control">
-                                            <label for="payment-3"> 
-
-                                                <h2>Apple Pay</h2>
-                                                <img src="images/pu3.png" alt="">
-                                            </label>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="CVC Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
+                                        <div class="sub-select-payment-method">
+                                            <div class="input-payment-method">
+                                                <input type="radio" id="payment-5" name="payment" class="form-control">
+                                                <label for="payment-5">
 
-                                        <div class="input-payment-method">
-                                            <input type="radio"  id="payment-4" name="payment" class="form-control">
-                                            <label for="payment-4"> 
+                                                    <h2>Tamara</h2>
+                                                    <img src="images/pu5.png" alt="">
+                                                </label>
+                                            </div>
+                                            <div class="form-payment">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Cardholder's Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Card Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_month">
+                                                                <option value="Exp. Month"> Exp. Month</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-form arrow-select">
+                                                            <select class="form-select form-control " name="exp_year">
+                                                                <option value="Exp. Month"> Exp. Year</option>
+                                                                <option value="1 ">1 </option>
+                                                                <option value="2"> 2</option>
+                                                                <option value="3"> 3</option>
+                                                                <option value="4"> 4</option>
+                                                                <option value="5"> 5</option>
+                                                                <option value="6"> 6</option>
+                                                                <option value="7"> 7</option>
+                                                                <option value="8"> 8</option>
+                                                                <option value=" 9"> 9</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
 
-                                                <h2>Mada</h2>
-                                                <img src="images/pu4.png" alt="">
-                                            </label>
+                                                    <div class="col-lg-12">
+                                                        <div class="input-form">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="CVC Number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-
-
-                                        <div class="input-payment-method">
-                                            <input type="radio"  id="payment-5" name="payment" class="form-control">
-                                            <label for="payment-5"> 
-
-                                                <h2>Tamara</h2>
-                                                <img src="images/pu5.png" alt="">
-                                            </label>
-                                        </div>
-
-
 
 
                                     </form>
@@ -348,7 +629,7 @@
                             </div>
 
 
-                            
+
                             <div class="col-lg-5">
                                 <div class="cart-summary">
                                     <div class="title-cart-summary">
@@ -356,14 +637,18 @@
                                         <span> 4 items </span>
                                     </div>
                                     <ul>
-                                        <li>Subtotal  <div> <span id="sub_total">   </span> SAR</div> </li>
-                                        <li>Discount  <div> <span> 0.00 </span> SAR</div></li>
-                                        <li>Fees     <div> <span> 0.00 </span> SAR</div></li>
+                                        <li>Subtotal <div> <span id="sub_total"> </span> SAR</div>
+                                        </li>
+                                        <li>Discount <div> <span> 0.00 </span> SAR</div>
+                                        </li>
+                                        <li>Fees <div> <span> 0.00 </span> SAR</div>
+                                        </li>
                                     </ul>
 
 
                                     <div class="total-price-cart-page">
-                                        <h3> Grand Total <div >  <span id="total"> </span> SAR</div></h3>
+                                        <h3> Grand Total <div> <span id="total"> </span> SAR</div>
+                                        </h3>
                                         <a href="confirm-payment.html" class="ctm-btn">Confirm and Pay</a>
                                     </div>
                                 </div>
@@ -831,7 +1116,7 @@
     <script src="js/lightgallery.min.js"></script>
     <script src="https://kit.fontawesome.com/392319d0e8.js" crossorigin="anonymous"></script>
 
-    
+
     <script src="js/cart.js"></script>
     <script src="js/custom.js"></script>
 

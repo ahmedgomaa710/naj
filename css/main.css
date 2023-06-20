@@ -2611,7 +2611,7 @@
   font-family: "font_bold";
 }
 
-.input-payment-method:last-of-type label {
+.sub-select-payment-method:last-of-type .input-payment-method label {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -2649,7 +2649,26 @@
 .img-comfirm-payment img {
   max-width: 300px;
 }
+.form-payment .col-lg-12,
+.form-payment .col-lg-6 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.form-payment  .row {
+  row-gap: 0;
+}
+.form-payment .input-form{
+  margin: 5px 0;
+}
 
+.form-payment  .arrow-select select {
+  font-size: 19px;
+  color: var(--color-text2);
+}
+
+.form-payment {
+  display: none;
+}
 /* -------------------------------------- */
 /* -------- end  style  payment -------- */
 /* -------------------------------------- */
@@ -3909,7 +3928,8 @@
 }
 
 .settings,
-.change-password {
+.change-password,
+.change-language {
   padding: 40px 60px 85px 60px;
 }
 
@@ -3983,6 +4003,10 @@
 .input-change-language input:checked ~ label i {
   opacity: 1;
   transform: scale(1);
+}
+
+.btn-change-language {
+  margin-top: 40px;
 }
 
 /*========================================================
@@ -4114,6 +4138,7 @@
   padding-left: 30px;
   color: var(--color-text2);
   position: relative;
+  margin: 0;
   font-size: 18px;
   cursor: pointer;
   user-select: none;
@@ -4413,7 +4438,6 @@
   height: 600px;
   border-radius: 20px;
   overflow: hidden;
-
 }
 
 .main-course-video button {
@@ -4440,16 +4464,16 @@
   opacity: 1 !important;
 }
 
-.main-course-video::after{
+.main-course-video::after {
   width: 100%;
   height: 100%;
   content: "";
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   position: absolute;
   z-index: 1;
   pointer-events: none;
   background-color: var(--color-black);
-  opacity: .4;
+  opacity: 0.4;
   left: 0;
   top: 0;
 }
