@@ -2561,14 +2561,14 @@
   box-shadow: 0 1px 5px #00000027;
   border-radius: 20px;
 }
-
+/* 
 .input-payment-method input {
   width: 0;
   height: 0;
   position: absolute;
-}
+} */
 
-.input-payment-method label {
+.input-payment-method {
   width: 100%;
   display: flex;
   position: relative;
@@ -2580,12 +2580,12 @@
   justify-content: space-between;
 }
 
-.input-payment-method label img {
+.input-payment-method  img {
   max-width: 110px;
   max-height: 28px;
 }
 
-.input-payment-method label::after {
+.input-payment-method::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -2595,23 +2595,28 @@
   left: 0;
 }
 
-.input-payment-method input:checked ~ label::before {
+.input-payment-method::before {
   content: "";
   position: absolute;
   width: 14px;
   height: 14px;
+  opacity: 0;
   border-radius: 50%;
   background-color: var(--color-main);
+  transition: all .3s linear;
   border: 1px solid var(--color-main);
   left: 3px;
 }
 
-.input-payment-method label h2 {
+.input-payment-method h2 {
   font-size: 22px;
   font-family: "font_bold";
 }
 
-.sub-select-payment-method:last-of-type .input-payment-method label {
+.input-payment-method.active::before {
+  opacity: 1;
+}
+.sub-select-payment-method:last-of-type .input-payment-method  {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -4480,6 +4485,14 @@
 
 .main-course-video.active::after {
   opacity: 0;
+}
+section.terms p {
+  line-height: 35px;
+  font-size: 19px;
+}
+section.privacy-policy p {
+  line-height: 35px;
+  font-size: 19px;
 }
 
 /*

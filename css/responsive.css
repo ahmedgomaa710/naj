@@ -408,6 +408,30 @@
 }
 
 @media (max-width: 1280px) {
+  .sub-profile-courses h2 {
+    font-size: 20px;
+    width: 100%;
+    line-height: 30px;
+  }
+  .fliter-profile-courses {
+    width: 65%;
+  }
+  .input-profile-courses input,
+  .input-profile-courses select {
+    height: 55px;
+  }
+  .arrow-select::after {
+    top: 20px;
+  }
+  .sub-profile-courses p {
+    font-size: 17px;
+    line-height: 27px;
+    width: 100%;
+    padding: 0px 0 20px;
+  }
+  .duration-courses {
+    font-size: 17px;
+  }
   .img-news-details-index {
     height: 360px;
   }
@@ -855,6 +879,10 @@
 }
 
 @media (max-width: 992px) {
+  .sub-profile-courses {
+    width: 100%;
+  }
+
   .prodect-profile {
     overflow: auto;
   }
@@ -1294,10 +1322,20 @@
   }
   .table-order .table {
     width: 200%;
-}
+  }
 }
 
 @media (max-width: 768px) {
+  .profile-courses form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .fliter-profile-courses {
+    width: 100%;
+  }
+  .btn-completed {
+    width: 100%;
+  }
   .invoice-price ul li h3 {
     font-size: 17px;
   }
@@ -1483,9 +1521,34 @@
 }
 
 @media (max-width: 576px) {
+  .completed-courses img {
+    max-width: 22px;
+  }
+  .fliter-profile-courses {
+    flex-wrap: wrap;
+
+    gap: 40px;
+  }
+  section.terms p {
+    line-height: 30px;
+    font-size: 17px;
+  }
+  section.privacy-policy p {
+    line-height: 30px;
+    font-size: 17px;
+  }
+  .main-signup select {
+    font-size: 15px;
+  }
+  .fliter-profile-courses .input-profile-courses.arrow-select {
+    width: 100%;
+  }
+  .fliter-profile-courses .input-profile-courses {
+    width: 100%;
+  }
   .table-order .table {
     width: 300%;
-}
+  }
   .sub-order-detail {
     width: 100%;
   }

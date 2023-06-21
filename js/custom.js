@@ -1,6 +1,5 @@
 // Aos
 
-
 AOS.init();
 
 setTimeout(() => {
@@ -12,10 +11,6 @@ window.onload = function () {
     $(".header-pages").addClass("active");
   }, 300);
 };
-
-
-
-
 
 $(".click-dropdown-mune").click(function (e1) {
   e1.preventDefault();
@@ -45,10 +40,6 @@ $(".delete-cart-index").click(function (e) {
   $(this).parents(".sub-product-cart-index").fadeOut();
 });
 
-
-
-
-
 //silder-prodect-details
 if ($("#slider-product-details").length) {
   $("#slider-product-details").owlCarousel({
@@ -71,16 +62,6 @@ if ($("#slider-product-details").length) {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
 //silder-services
 if ($("#slider-services").length) {
   $("#slider-services").owlCarousel({
@@ -99,7 +80,6 @@ if ($("#slider-services").length) {
         items: 1,
         dots: true,
         smartSpeed: 400,
-
       },
       700: {
         items: 3,
@@ -130,7 +110,6 @@ if ($("#slider-partners").length) {
         dots: true,
 
         smartSpeed: 400,
-
       },
       700: {
         items: 3,
@@ -162,7 +141,6 @@ if ($("#slider-related-products").length) {
         dots: true,
 
         smartSpeed: 400,
-
       },
       700: {
         items: 2,
@@ -174,8 +152,7 @@ if ($("#slider-related-products").length) {
   });
 }
 
-
-// start siderimg-achievements 
+// start siderimg-achievements
 if ($("#siderimg-achievements").length) {
   $("#siderimg-achievements").owlCarousel({
     loop: false,
@@ -194,7 +171,6 @@ if ($("#siderimg-achievements").length) {
         dots: true,
 
         smartSpeed: 400,
-
       },
       700: {
         items: 2,
@@ -420,7 +396,6 @@ window.onload = function () {
 };
 // ===========================================
 
-
 // categories
 if (window.screen.width >= 992) {
   $("#click-categories").click(function (e) {
@@ -455,21 +430,13 @@ if (window.screen.width >= 992) {
 }
 // end categories
 
-
-
-
-
 //  start click curriculum
 $(".sub-curriculum > h2").click(function (e) {
   e.preventDefault();
   $(this).next().slideToggle();
-  $(this).parents().toggleClass("active1")
-})
+  $(this).parents().toggleClass("active1");
+});
 // end click curriculum
-
-
-
-
 
 $(".animated-progress span").each(function () {
   $(this).animate(
@@ -478,32 +445,24 @@ $(".animated-progress span").each(function () {
     },
     2000
   );
-
 });
 
+$(document).ready(function () {
+  var readURLprofile = function (input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
 
+      reader.onload = function (e) {
+        $(".img-edit-profile img").attr("src", e.target.result);
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  };
 
-$(document).ready(function() {
-  var readURLprofile = function(input) {
-      if (input.files && input.files[0]) {
-          var reader = new FileReader();
-
-          reader.onload = function (e) {
-              $('.img-edit-profile img').attr('src', e.target.result);
-          }
-          reader.readAsDataURL(input.files[0]);
-      }
-  }
-
-
-  $("#chenge1").on('change', function(){
+  $("#chenge1").on("change", function () {
     readURLprofile(this);
   });
-  
 });
-
-
-
 
 // start otp
 let digitValidate = function (ele) {
@@ -521,41 +480,39 @@ let tabChange = function (val) {
 };
 // end otp
 
-
-
-
 // play-video"
-$("#play-video").click(function(e) {
+$("#play-video").click(function (e) {
   e.preventDefault();
-  if($(this).hasClass("active")) {
-    $(".main-course-video").removeClass("active")
-    $("#play-video i").removeClass("fa-pause").addClass("fa-play"); 
+  if ($(this).hasClass("active")) {
+    $(".main-course-video").removeClass("active");
+    $("#play-video i").removeClass("fa-pause").addClass("fa-play");
     $(this).removeClass("active");
-    $(".main-course-video video").get(0).pause(); 
+    $(".main-course-video video").get(0).pause();
     setTimeout(() => {
       $(this).css("opacity", 1);
     }, 400);
-    
-
-  }else {
-    $("#play-video i").removeClass("fa-play").addClass("fa-pause"); 
+  } else {
+    $("#play-video i").removeClass("fa-play").addClass("fa-pause");
     $(this).addClass("active");
-    $(".main-course-video video").get(0).play(); 
+    $(".main-course-video video").get(0).play();
     $(this).addClass("active");
-    $(".main-course-video").addClass("active")
+    $(".main-course-video").addClass("active");
     setTimeout(() => {
       $(this).css("opacity", 0);
     }, 400);
   }
-})
+});
 //end  play-video"
+$(".input-payment-method").click(function (e) {
+  e.preventDefault();
+  $(".form-payment").slideUp();
 
-
-
-
-
-$(".input-payment-method").click(function(e){
-  e.preventDefault()
-  $(this).next().slideToggle();
-  $(this).find("input").val(checked);
-})
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+    $(".form-payment").slideUp();
+  } else {
+    $(".input-payment-method").removeClass("active")
+    $(this).addClass("active");
+    $(this).next().slideDown();
+  }
+});
