@@ -40,6 +40,33 @@
 }
 
 @media (max-width: 1480px) {
+  .sub-choosing-place label {
+    height: 210px;
+  }
+
+  .sub-choosing-month label h4 {
+    font-size: 19px;
+  }
+
+  .sub-choosing-month label {
+    padding: 5px 20px;
+    align-content: space-evenly;
+    height: 120px;
+
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .sub-choosing-instructors label,
+  .sub-choosing-equipments label {
+    height: 250px;
+    border-radius: 15px;
+  }
+
+  .text-choosing-instructors h2 {
+    font-size: 18px;
+  }
+
   .animated-progress {
     width: calc(80% - 10px);
   }
@@ -206,7 +233,7 @@
     font-size: 28px;
   }
 
-  .text-products-index > h2 {
+  .text-products-index>h2 {
     font-size: 23px;
     width: 85%;
     margin: 30px 0 15px;
@@ -227,7 +254,7 @@
     height: 230px;
   }
 
-  .text-products-index > p {
+  .text-products-index>p {
     font-size: 17px;
   }
 
@@ -397,10 +424,12 @@
   .table-order .table td a {
     font-size: 16px;
   }
+
   .table-order .table td,
   .table-order .table th {
     padding: 0.7rem 8px;
   }
+
   .table-order .table th {
     padding: 20px 9px !important;
     font-size: 16px;
@@ -413,25 +442,31 @@
     width: 100%;
     line-height: 30px;
   }
+
   .fliter-profile-courses {
     width: 65%;
   }
+
   .input-profile-courses input,
   .input-profile-courses select {
     height: 55px;
   }
+
   .arrow-select::after {
     top: 20px;
   }
+
   .sub-profile-courses p {
     font-size: 17px;
     line-height: 27px;
     width: 100%;
     padding: 0px 0 20px;
   }
+
   .duration-courses {
     font-size: 17px;
   }
+
   .img-news-details-index {
     height: 360px;
   }
@@ -484,19 +519,24 @@
     font-size: 18px;
     line-height: 21px;
   }
+
   .prodect-profile .price-product-cart h3 {
     font-size: 19px;
   }
+
   .prodect-profile .old-price {
     font-size: 19px;
   }
+
   .prodect-profile .code-product {
     font-size: 19px;
   }
+
   .tabs-order-details ul li a {
     height: 100%;
     font-size: 19px;
   }
+
   .details-invoice ul li {
     font-size: 17px;
   }
@@ -504,27 +544,35 @@
   .invoice p {
     font-size: 18px;
   }
+
   .invoice tbody td {
     font-size: 16px;
   }
+
   .title-login p {
     width: 100%;
   }
+
   .text-login-main h2 {
     font-size: 30px;
   }
+
   .main-login {
     padding: 20px;
   }
+
   .form-edit-profile {
     width: 100%;
   }
+
   .edit-profile {
     padding: 30px 20px;
   }
+
   .main-course-video {
     height: 400px;
   }
+
   .input-change-language label {
     width: 100%;
   }
@@ -627,7 +675,7 @@
     font-size: 17px;
   }
 
-  .sub-curriculum > h2 {
+  .sub-curriculum>h2 {
     height: 70px;
     font-size: 17px;
   }
@@ -690,7 +738,7 @@
     font-size: 15px;
   }
 
-  .text-products-index > h2 {
+  .text-products-index>h2 {
     font-size: 21px;
     width: 100%;
     margin: 15px 0 15px;
@@ -879,6 +927,13 @@
 }
 
 @media (max-width: 992px) {
+
+  .order-tracking ul li {
+    flex-wrap: wrap;
+    width: calc(50% - 10px);
+    justify-content: center;
+  }
+
   .sub-profile-courses {
     width: 100%;
   }
@@ -886,28 +941,34 @@
   .prodect-profile {
     overflow: auto;
   }
+
   .prodect-profile table {
     width: 150%;
   }
+
   .prodect-profile .text-prodect-cart-page h3 {
     font-size: 17px;
   }
+
   .title-login {
     height: auto;
     min-height: auto;
     text-align: center;
     padding: 25px;
   }
+
   .title-login p {
     width: 70%;
     margin: 15px auto 0;
     font-size: 17px;
     line-height: 28px;
   }
+
   .title-login h2 {
     width: 100%;
     font-size: 30px;
   }
+
   .main-login {
     text-align: center;
   }
@@ -916,30 +977,37 @@
     width: 125px;
     height: 125px;
   }
+
   .img-edit-profile {
     margin: 20px auto;
   }
+
   .btn-edit-profile {
     margin-top: 20px;
     text-align: center;
   }
+
   .title-course-video {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     text-align: center;
   }
+
   .sidebar-myaccount {
     margin-bottom: 20px;
   }
+
   .text-title-my-account p {
     font-size: 19px;
     margin-top: 5px;
   }
+
   .title-course-video h2 {
     width: 100%;
     text-align: center;
   }
+
   .sub-progress-video {
     justify-content: center;
   }
@@ -959,6 +1027,7 @@
     justify-content: center;
     text-align: center;
   }
+
   .search-header-modal .modal-dialog {
     margin: 50% 20px;
   }
@@ -1020,12 +1089,12 @@
     margin: 10px 0;
   }
 
-  .main-categories-header > ul > li {
+  .main-categories-header>ul>li {
     padding: 0 0px;
     width: 100%;
   }
 
-  .main-categories-header > ul > li > a {
+  .main-categories-header>ul>li>a {
     color: var(--color-white);
     padding: 10px 20px;
     background: var(--color-main);
@@ -1093,7 +1162,7 @@
     margin: 20px 0;
   }
 
-  .element_menu_responsive > ul > li {
+  .element_menu_responsive>ul>li {
     margin: 25px 0;
   }
 
@@ -1285,10 +1354,6 @@
     width: 17%;
   }
 
-  .order-tracking ul li {
-    flex-wrap: wrap;
-    width: calc(50% - 10px);
-  }
 
   .order-tracking ul {
     width: 100%;
@@ -1300,61 +1365,102 @@
     display: none;
   }
 
-  .order-tracking ul li h2 {
-    font-size: 15px;
+  .order-tracking ul {
     width: 100%;
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
   }
 
-  .order-tracking ul li {
-    flex-wrap: wrap;
-    width: calc(33% - 10px);
-    justify-content: center;
-  }
 
   .main-cart .table thead tr th:nth-of-type(1) {
     width: 60%;
   }
+
   .table-order {
     overflow: auto;
   }
+
   .table-order .table {
     width: 200%;
+  }
+
+  .order-tracking ul li:last-of-type {
+    width: calc(50% - 10px);
+    justify-content: flex-start;
   }
 }
 
 @media (max-width: 768px) {
+  .sub-choosing-date {
+    flex-wrap: wrap;
+  }
+
+  .input-cho-date label {
+    font-size: 21px;
+  }
+
+  .input-cho-date {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .title-booking-page {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+
+  .explain-date {
+    margin: 40px 0;
+    gap: 10px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .explain-date div {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    width: calc(50% - 5px);
+  }
+
   .profile-courses form {
     flex-wrap: wrap;
     gap: 20px;
   }
+
   .fliter-profile-courses {
     width: 100%;
   }
+
   .btn-completed {
     width: 100%;
   }
+
   .invoice-price ul li h3 {
     font-size: 17px;
   }
+
   .invoice-price ul li span {
     width: 50%;
     font-size: 16px;
   }
+
   .img-title-my-account {
     width: 60px;
     height: 60px;
     border-radius: 50%;
   }
+
   .text-title-my-account h2 {
     font-size: 20px;
   }
+
   .delete-myaccount .ctm-btn2 {
     height: 50px;
     padding: 11px 20px;
   }
+
   .sub-footer p {
     width: 100%;
     margin: 10px 0 0 0;
@@ -1369,7 +1475,7 @@
     font-size: 16px;
   }
 
-  .text-achievements-details > ul > li::after {
+  .text-achievements-details>ul>li::after {
     top: 7px;
   }
 
@@ -1521,125 +1627,165 @@
 }
 
 @media (max-width: 576px) {
+  .sub-choosing-place label {
+    height: 182px;
+  }
+
+  .caption-choosing-place h2 {
+    font-size: 16px;
+  }
+
   .completed-courses img {
     max-width: 22px;
   }
+
   .fliter-profile-courses {
     flex-wrap: wrap;
 
     gap: 40px;
   }
+
   section.terms p {
     line-height: 30px;
     font-size: 17px;
   }
+
   section.privacy-policy p {
     line-height: 30px;
     font-size: 17px;
   }
+
   .main-signup select {
     font-size: 15px;
   }
+
   .fliter-profile-courses .input-profile-courses.arrow-select {
     width: 100%;
   }
+
   .fliter-profile-courses .input-profile-courses {
     width: 100%;
   }
+
   .table-order .table {
     width: 300%;
   }
+
   .sub-order-detail {
     width: 100%;
   }
+
   .status-updated {
     flex-wrap: wrap;
     margin: 20px 0;
   }
+
   .order-detail h2 {
     font-size: 19px;
     font-family: "font_bold";
   }
+
   .prodect-profile .img-prodect-cart-page {
     width: 96px;
     height: 90px;
   }
+
   .prodect-profile .price-product-cart h3 {
     font-size: 16px;
   }
+
   .prodect-profile .old-price {
     font-size: 16px;
   }
+
   .prodect-profile table {
     width: 201%;
   }
+
   .tabs-order-details ul li a {
     height: 100%;
     font-size: 15px;
   }
+
   .tabs-order-details ul li {
     height: 39px;
   }
+
   .title-order-details h2 {
     height: 55px;
     font-size: 16px;
   }
+
   .invoice tbody td {
     font-size: 14px;
   }
+
   .invoice p {
     font-size: 16px;
   }
+
   .details-invoice ul li {
     font-size: 15px;
   }
+
   .sub-order-detail ul li span {
     padding: 10px 16px;
     font-size: 14px;
   }
+
   .invoice-price ul li span {
     font-size: 14px;
   }
+
   .tabs-order-details ul li a {
     height: 100%;
     font-size: 15px;
     padding: 0.5rem 0;
   }
+
   .logo-login img {
     width: 123px;
   }
+
   .main-course-video button {
     height: 45px;
     font-size: 19px;
     width: 45px;
   }
+
   .text-login-main h2 {
     font-size: 22px;
   }
+
   .main-course-video {
     height: 255px;
   }
+
   .sub-title-my-account {
     width: 100%;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .title-my-account {
     padding: 20px 20px;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
   }
+
   .text-title-my-account {
     width: 100%;
   }
+
   .btn-form-login button {
     width: auto;
     min-width: 176px;
     height: 50px;
     font-size: 18px;
   }
+
   .settings,
   .change-password,
   .change-language {
@@ -1649,6 +1795,7 @@
   .main-myaccount {
     margin-top: 35px;
   }
+
   .settings h2,
   .change-password h2,
   .change-language h2 {
@@ -1670,56 +1817,70 @@
   input.form-control::placeholder {
     font-size: 16px;
   }
+
   .delete-myaccount .ctm-btn2 {
     height: 43px;
     padding: 9px 20px;
   }
+
   .title-login h2 {
     width: 100%;
     font-size: 25px;
   }
+
   .title-login p {
     font-size: 17px;
     line-height: 28px;
   }
+
   .text-login-main p {
     margin: 18px 0 0;
     font-size: 17px;
     line-height: 25px;
   }
+
   .main-login {
     padding: 22px 5px;
     gap: 15px;
   }
+
   .title-login p {
     width: 100%;
   }
+
   .input-remember a {
     font-size: 16px;
   }
+
   .text-login-main p a {
     font-size: 17px;
   }
+
   .img-details-myprofile {
     width: 110px;
     margin-bottom: 25px;
     height: 110px;
   }
+
   .details-myprofile ul li {
     margin: 15px 0;
     font-size: 16px;
   }
+
   .details-myprofile ul li::after {
     top: 6px;
   }
+
   .title-myprofile h2 {
     font-size: 18px;
   }
+
   .title-myprofile a {
     height: 45px;
     font-size: 15px;
     padding: 13px 15px;
   }
+
   .myprofile,
   .edit-profile,
   .orders,
@@ -1729,30 +1890,36 @@
   .change-language {
     padding: 20px 10px;
   }
+
   .img-bookings {
     width: 96px;
     height: 90px;
   }
+
   .text-bookings h3 {
     font-size: 16px;
   }
+
   .tabs-bookings ul li a {
     height: 100%;
     font-size: 17px;
   }
+
   .tabs-bookings ul li {
     height: 40px;
   }
+
   .text-bookings span {
     font-size: 16px;
     margin-top: 7px;
   }
+
   .sub-authors h2 {
     font-size: 18px;
     margin: 10px 0 0;
   }
 
-  .main-authors-details > p {
+  .main-authors-details>p {
     margin: 50px 0;
     font-size: 17px;
     line-height: 30px;
@@ -1983,7 +2150,7 @@
     width: 300px;
   }
 
-  .element_menu_responsive > ul > li > a {
+  .element_menu_responsive>ul>li>a {
     font-size: 17px;
   }
 
@@ -2202,7 +2369,7 @@
   }
 
   .order-tracking ul li {
-    width: calc(32% - 10px) !important;
+    width: calc(50% - 10px) !important;
     min-width: auto;
   }
 
@@ -2245,7 +2412,7 @@
     font-size: 16px;
   }
 
-  .select-payment-method > h2 {
+  .select-payment-method>h2 {
     margin-bottom: 15px;
     font-size: 17px;
   }
@@ -2363,6 +2530,7 @@
   #click-categories img {
     max-width: 17px;
   }
+
   .main-course-video {
     height: 220px;
   }

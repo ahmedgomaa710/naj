@@ -57,7 +57,6 @@
         ============ -->
         <header class="header active">
 
-
             <!-- start top par  -->
             <div class="top-par">
                 <div class="main-container">
@@ -221,13 +220,11 @@
 
 
             <div class="title-pages">
-                <h1>Payment</h1>
+                <h1>Cart</h1>
                 <div class="breadcrump">
                     <a href="index.html">Home</a>
                     <i class="fa-solid fa-chevron-right"></i>
-                    <a href="cart.html">Cart</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span>Payment</span>
+                    <span>Cart</span>
                 </div>
             </div>
 
@@ -245,7 +242,7 @@
 
 
 
-            <section class="payment-page mr-section">
+            <section class="booking-page cart-page mr-section">
                 <div class="main-container">
                     <div class="order-tracking">
                         <ul>
@@ -261,7 +258,7 @@
                                     <h2>Your Cart <span></span></h2>
                                 </a>
                             </li>
-                            <li  class="completed">
+                            <li class="active">
                                 <a href="booking.html">
                                     <div class="img-order-tracking">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
@@ -275,7 +272,7 @@
                                     <h2> Booking <span></span></h2>
                                 </a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="payment.html">
                                     <div class="img-order-tracking">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
@@ -303,338 +300,506 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="main-payment-page">
+
+
+
+
+
+
+
+
+
+                    <div class="main-booking-page">
                         <div class="row">
                             <div class="col-lg-7">
-                                <div class="select-payment-method">
-                                    <h2>Select Payment Method :</h2>
+                                <div class="form-booking-page">
                                     <form action="">
-                                        <div class="sub-select-payment-method">
-                                            <div class="input-payment-method">
-                                                <h2>Visa</h2>
-                                                <img src="images/pu1.png" alt="">
+                                        <h2 class="title-booking-page"> Location : </h2>
+
+                                        <div class="choosing-place">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 col-9">
+                                                    <div class="sub-choosing-place">
+                                                        <input type="radio" name="choosing_place" id="place-1">
+                                                        <label for="place-1">
+                                                            <img src="images/bo1.jpg" alt="">
+                                                            <div class="caption-choosing-place">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                                <h2> <i class="fa-solid fa-location-dot"></i> Al-Riyadh
+                                                                </h2>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-9">
+                                                    <div class="sub-choosing-place">
+                                                        <input type="radio" name="choosing_place" id="place-2">
+                                                        <label for="place-2">
+                                                            <img src="images/bo2.jpg" alt="">
+                                                            <div class="caption-choosing-place">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                                <h2> <i class="fa-solid fa-location-dot"></i> Jeddah
+                                                                </h2>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-9">
+                                                    <div class="sub-choosing-place">
+                                                        <input type="radio" name="choosing_place" id="place-3">
+                                                        <label for="place-3">
+                                                            <img src="images/bo3.jpg" alt="">
+                                                            <div class="caption-choosing-place">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                                <h2> <i class="fa-solid fa-location-dot"></i> Tabuk
+                                                                </h2>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-6 col-9">
+                                                    <div class="sub-choosing-place">
+                                                        <input type="radio" name="choosing_place" id="place-4">
+                                                        <label for="place-4">
+                                                            <img src="images/bo4.jpg" alt="">
+                                                            <div class="caption-choosing-place">
+                                                                <i class="fa-solid fa-circle-check"></i>
+                                                                <h2> <i class="fa-solid fa-location-dot"></i> Al Madinah
+                                                                    Al Munawwarah</h2>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
                                             </div>
 
-                                            <div class="form-payment">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Cardholder's Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Card Number">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_month">
-                                                                <option value="Exp. Month"> Exp. Month</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_year">
-                                                                <option value="Exp. Month"> Exp. Year</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
+                                        </div>
 
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="CVC Number">
+
+                                        <h2 class="title-booking-page"> Date : </h2>
+
+                                        <div class="choosing-date">
+                                            <div class="sub-choosing-date">
+                                                <div class="input-cho-date">
+                                                    <label for="">Year : </label>
+                                                    <input type="number" name="Year" placeholder="2023">
+                                                </div>
+                                                <div class="input-cho-date">
+                                                    <label for=""> Month : </label>
+                                                    <select placeholder="">
+                                                        <option name="January" value="Jan">January</option>
+                                                        <option name="February" value="Feb">February</option>
+                                                        <option name="March" value="Mar">March</option>
+                                                        <option name="April" value="Apr">April</option>
+                                                        <option name="May" value="May">May</option>
+                                                        <option name="June" value="Jun">June</option>
+                                                        <option name="July" value="Jul">July</option>
+                                                        <option name="August" value="Aug">August</option>
+                                                        <option name="September" value="Sep">September</option>
+                                                        <option name="October" value="Oct">October</option>
+                                                        <option name="November" value="Nov">November</option>
+                                                        <option name="December" value="Dec">December</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="explain-date">
+                                                <div class="avaliable-explain-explain"> Avaliable </div>
+                                                <div class="mostly-booked-explain"> Mostly booked </div>
+                                                <div class="fully-booked-explain"> Fully booked </div>
+                                            </div>
+
+
+                                            <div class="choosing-month">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month avaliable">
+                                                            <input type="radio" name="choosing-month" id="month-1">
+                                                            <label for="month-1">
+                                                                <h4>June</h4>
+                                                                <span>1</span>
+                                                                <h3> Thu </h3>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month fully">
+                                                            <input type="radio" name="choosing-month" id="month-2">
+                                                            <label for="month-2">
+                                                                <h4>June</h4>
+                                                                <span>2</span>
+                                                                <h3> Fri </h3>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month avaliable">
+                                                            <input type="radio" name="choosing-month" id="month-3">
+                                                            <label for="month-3">
+                                                                <h4>June</h4>
+                                                                <span>3</span>
+                                                                <h3> Sat </h3>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month avaliable">
+                                                            <input type="radio" name="choosing-month" id="month-4">
+                                                            <label for="month-4">
+                                                                <h4>June</h4>
+                                                                <span>4</span>
+                                                                <h3> Sun </h3>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month mostly">
+                                                            <input type="radio" name="choosing-month" id="month-5">
+                                                            <label for="month-5">
+                                                                <h4>June</h4>
+                                                                <span>5</span>
+                                                                <h3> Mon </h3>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month avaliable">
+                                                            <input type="radio" name="choosing-month" id="month-6">
+                                                            <label for="month-6">
+                                                                <h4>June</h4>
+                                                                <span>6</span>
+                                                                <h3> Tue </h3>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-4">
+                                                        <div class="sub-choosing-month avaliable">
+                                                            <input type="radio" name="choosing-month" id="month-7">
+                                                            <label for="month-7">
+                                                                <h4>June</h4>
+                                                                <span>7</span>
+                                                                <h3> Thu </h3>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                        </div>
 
-                                        <div class="sub-select-payment-method">
-                                            <div class="input-payment-method">
-                                                <h2>Master Card</h2>
-                                                <img src="images/pu2.png" alt="">
-                                            </div>
-                                            <div class="form-payment">
+                                            <h2 class="title-booking-page"> Time : </h2>
+
+                                            <div class="choosing-time">
                                                 <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Cardholder's Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Card Number">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_month">
-                                                                <option value="Exp. Month"> Exp. Month</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_year">
-                                                                <option value="Exp. Month"> Exp. Year</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-1">
+                                                            <label for="time-1"> 9 AM</label>
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="CVC Number">
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time mostly">
+                                                            <input type="radio" name="choosing-time" id="time-2">
+                                                            <label for="time-2"> 10 AM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-3">
+                                                            <label for="time-3"> 11 AM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time mostly">
+                                                            <input type="radio" name="choosing-time" id="time-4">
+                                                            <label for="time-4"> 12 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-5">
+                                                            <label for="time-5"> 1 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time mostly">
+                                                            <input type="radio" name="choosing-time" id="time-6">
+                                                            <label for="time-6"> 2 PM</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-7">
+                                                            <label for="time-7"> 3 PM</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-8">
+                                                            <label for="time-8"> 4 PM</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-9">
+                                                            <label for="time-9"> 5 PM</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-10">
+                                                            <label for="time-10"> 6 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time fully">
+                                                            <input type="radio" name="choosing-time" id="time-12">
+                                                            <label for="time-12">7 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time fully">
+                                                            <input type="radio" name="choosing-time" id="time-13">
+                                                            <label for="time-13"> 8 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-14">
+                                                            <label for="time-14">9 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time fully">
+                                                            <input type="radio" name="choosing-time" id="time-11">
+                                                            <label for="time-11"> 10 PM</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                        <div class="sub-choosing-time avaliable">
+                                                            <input type="radio" name="choosing-time" id="time-15">
+                                                            <label for="time-15"> 11 PM</label>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <h2 class="title-booking-page"> Instructors : </h2>
+
+                                            <div class="choosing-instructors">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-instructors">
+                                                            <input type="radio" name="choosing_place"
+                                                                id="instructors-1">
+                                                            <label for="instructors-1">
+                                                                <img src="images/ah1.png" alt="">
+                                                                <div class="caption-choosing-instructors">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+
+
+                                                                    <div class="text-choosing-instructors">
+                                                                        <h2>Dr. Faisal Almutairi</h2>
+                                                                        <h3> <i class="fa-solid fa-location-dot"></i>
+                                                                            Al-Riyadh
+                                                                        </h3>
+                                                                        <span>200 SAR/hr</span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-instructors">
+                                                            <input type="radio" name="choosing_place"
+                                                                id="instructors-2">
+                                                            <label for="instructors-2">
+                                                                <img src="images/ah2.png" alt="">
+                                                                <div class="caption-choosing-instructors">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+
+
+                                                                    <div class="text-choosing-instructors">
+                                                                        <h2>Dr. Faisal Almutairi</h2>
+                                                                        <h3> <i class="fa-solid fa-location-dot"></i>
+                                                                            Al-Riyadh
+                                                                        </h3>
+                                                                        <span>200 SAR/hr</span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-instructors">
+                                                            <input type="radio" name="choosing_place"
+                                                                id="instructors-3">
+                                                            <label for="instructors-3">
+                                                                <img src="images/ah3.png" alt="">
+                                                                <div class="caption-choosing-instructors">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+
+
+                                                                    <div class="text-choosing-instructors">
+                                                                        <h2>Dr. Abdulmajeed AlShujaa</h2>
+                                                                        <h3> <i class="fa-solid fa-location-dot"></i>
+                                                                            Al-Riyadh
+                                                                        </h3>
+                                                                        <span>220 SAR/hr</span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-instructors">
+                                                            <input type="radio" name="choosing_place"
+                                                                id="instructors-4">
+                                                            <label for="instructors-4">
+                                                                <img src="images/sp2.png" alt="">
+                                                                <div class="caption-choosing-instructors">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+
+                                                                    <div class="text-choosing-instructors">
+                                                                        <h2>Dr. Abdulmajeed AlShujaa</h2>
+                                                                        <h3> <i class="fa-solid fa-location-dot"></i>
+                                                                            Al-Riyadh
+                                                                        </h3>
+                                                                        <span>220 SAR/hr</span>
+                                                                    </div>
+
+                                                                </div>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
 
 
-                                        <div class="sub-select-payment-method">
-                                            <div class="input-payment-method">
-                                                <h2>Apple Pay</h2>
-                                                <img src="images/pu3.png" alt="">
-                                            </div>
-                                            <div class="form-payment">
+                                            <h2 class="title-booking-page"> Equipments  : </h2>
+
+                                            <div class="choosing-equipments">
                                                 <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Cardholder's Name">
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-equipments">
+                                                            <input type="checkbox" name="choosing_place"
+                                                                id="equipments-1">
+                                                            <label for="equipments-1">
+                                                                <img src="images/tools.png" alt="">
+                                                                <div class="caption-choosing-equipments">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+    
+    
+                                                                    <div class="text-choosing-equipments">
+                                                                        <h2>Tool Name</h2>
+                                                                        <span> 50 SAR/hr</span>
+                                                                    </div>
+    
+                                                                </div>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Card Number">
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-equipments">
+                                                            <input type="checkbox" name="choosing_place"
+                                                                id="equipments-2">
+                                                            <label for="equipments-2">
+                                                                <img src="images/tools.png" alt="">
+                                                                <div class="caption-choosing-equipments">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+    
+    
+                                                                    <div class="text-choosing-equipments">
+                                                                        <h2>Tool Name</h2>
+                                                                        <span> 50 SAR/hr</span>
+                                                                    </div>
+    
+                                                                </div>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_month">
-                                                                <option value="Exp. Month"> Exp. Month</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-equipments">
+                                                            <input type="checkbox" name="choosing_place"
+                                                                id="equipments-3">
+                                                            <label for="equipments-3">
+                                                                <img src="images/tools.png" alt="">
+                                                                <div class="caption-choosing-equipments">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+    
+    
+                                                                    <div class="text-choosing-equipments">
+                                                                        <h2>Tool Name</h2>
+                                                                        <span> 50 SAR/hr</span>
+                                                                    </div>
+    
+                                                                </div>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_year">
-                                                                <option value="Exp. Month"> Exp. Year</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="CVC Number">
+                                                    <div class="col-lg-4 col-sm-6 col-10">
+                                                        <div class="sub-choosing-equipments">
+                                                            <input type="checkbox" name="choosing_place"
+                                                                id="equipments-4">
+                                                            <label for="equipments-4">
+                                                                <img src="images/tools.png" alt="">
+                                                                <div class="caption-choosing-equipments">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+    
+    
+                                                                    <div class="text-choosing-equipments">
+                                                                        <h2>Tool Name</h2>
+                                                                        <span> 50 SAR/hr</span>
+                                                                    </div>
+    
+                                                                </div>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="sub-select-payment-method">
-                                            <div class="input-payment-method">
-                                                <h2>Mada</h2>
-                                                <img src="images/pu4.png" alt="">
-                                            </div>
-                                            <div class="form-payment">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Cardholder's Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Card Number">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_month">
-                                                                <option value="Exp. Month"> Exp. Month</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_year">
-                                                                <option value="Exp. Month"> Exp. Year</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="CVC Number">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <div class="btn-booking-page">
+                                                <a href="payment.html" class="ctm-btn "> Next</a>
                                             </div>
                                         </div>
-
-                                        <div class="sub-select-payment-method">
-                                            <div class="input-payment-method">
-                                                <h2>Tamara</h2>
-                                                <img src="images/pu5.png" alt="">
-                                            </div>
-                                            <div class="form-payment">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Cardholder's Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="Card Number">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_month">
-                                                                <option value="Exp. Month"> Exp. Month</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="input-form arrow-select">
-                                                            <select class="form-select form-control " name="exp_year">
-                                                                <option value="Exp. Month"> Exp. Year</option>
-                                                                <option value="1 ">1 </option>
-                                                                <option value="2"> 2</option>
-                                                                <option value="3"> 3</option>
-                                                                <option value="4"> 4</option>
-                                                                <option value="5"> 5</option>
-                                                                <option value="6"> 6</option>
-                                                                <option value="7"> 7</option>
-                                                                <option value="8"> 8</option>
-                                                                <option value=" 9"> 9</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-12">
-                                                        <div class="input-form">
-                                                            <input type="number" class="form-control"
-                                                                placeholder="CVC Number">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
                                     </form>
                                 </div>
                             </div>
-
 
 
                             <div class="col-lg-5">
                                 <div class="cart-summary">
                                     <div class="title-cart-summary">
                                         <h2>Cart Summary</h2>
-                                        <span> 4 items </span>
+                                        <span id="count-items"> <b>4</b> items </span>
                                     </div>
                                     <ul>
                                         <li>Subtotal <div> <span id="sub_total"> </span> SAR</div>
@@ -649,13 +814,12 @@
                                     <div class="total-price-cart-page">
                                         <h3> Grand Total <div> <span id="total"> </span> SAR</div>
                                         </h3>
-                                        <a href="confirm-payment.html" class="ctm-btn">Confirm and Pay</a>
+                                        <a href="booking.html" class="ctm-btn"> Check out </a>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
+
                     </div>
 
 
@@ -670,25 +834,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-            </section>
 
 
 
@@ -730,6 +875,7 @@
         =============================
         ==================================
         ==================== -->
+
 
 
 
@@ -1055,6 +1201,7 @@
     <script src="js/anime.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/lightgallery.min.js"></script>
+    <script src="js/videos.js"></script>
     <script src="https://kit.fontawesome.com/392319d0e8.js" crossorigin="anonymous"></script>
     <script src="js/cart.js"></script>
 
