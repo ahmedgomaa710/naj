@@ -23,6 +23,7 @@
     width: 45px;
     height: 45px;
   }
+
 }
 
 @media (min-width: 1400px) {
@@ -1629,6 +1630,19 @@
 @media (max-width: 576px) {
   .sub-choosing-place label {
     height: 182px;
+  }
+
+  .barcode-myaccount {
+    margin: 20px 0;
+  }
+
+  .barcode-myaccount img {
+    max-height: 100%;
+  }
+
+  .barcode-myaccount img {
+    object-fit: contain;
+    height: 85px;
   }
 
   .caption-choosing-place h2 {

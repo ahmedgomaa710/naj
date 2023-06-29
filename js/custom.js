@@ -34,10 +34,18 @@ $(".cart-header").click(function (e) {
   e.preventDefault();
   $(".cart-index").toggleClass("active");
 });
+$(".dots-bookings > span").click(function (e) {
+  e.preventDefault();
+  $(this).next().slideToggle();
+});
 
 $(".delete-cart-index").click(function (e) {
   e.preventDefault();
   $(this).parents(".sub-product-cart-index").fadeOut();
+});
+$(".delete-mybooking").click(function (e) {
+  e.preventDefault();
+  $(this).parents(".main-bookings ul li").slideUp();
 });
 
 //silder-prodect-details

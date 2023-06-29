@@ -2237,6 +2237,21 @@
   gap: 10px;
 }
 
+.order-tracking ul li.completed .img-order-tracking::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: 27px;
+  background-image: url(../images/vv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid var(--color-main);
+  background-color: var(--color-main);
+  z-index: 1;
+}
+
 .order-tracking ul li a {
   display: flex;
   width: 100%;
@@ -2251,6 +2266,8 @@
   justify-content: center;
   color: var(--color-text2);
   border-radius: 50%;
+  position: relative;
+
   background-color: #f7f7f7;
   height: 75px;
 }
@@ -2526,6 +2543,7 @@
 .order-tracking ul li.completed h2 span {
   border-color: var(--color-main);
 }
+
 
 .cart_empty {
   width: 50%;
@@ -2855,7 +2873,7 @@
   overflow-x: auto;
 }
 
-.choosing-time .col-lg-2{
+.choosing-time .col-lg-2 {
   padding-left: 7px;
   padding-right: 7px;
 
@@ -3687,12 +3705,17 @@
   margin-top: 5px;
 }
 
-.delete-myaccount .ctm-btn2 {
+.barcode-myaccount{
+  max-height: 120px;
+}
+/* .delete-myaccount .ctm-btn2 {
   height: 70px;
   background-color: transparent;
   border: 1px solid var(--color-white);
   color: var(--color-white);
 }
+
+
 
 .delete-myaccount .ctm-btn2 {
   border-radius: 95px;
@@ -3706,7 +3729,7 @@
 .delete-myaccount .ctm-btn2:hover {
   background-color: var(--color-white);
   color: var(--color-main);
-}
+} */
 
 .main-myaccount {
   margin-top: 100px;
@@ -3719,15 +3742,22 @@
 }
 
 .sidebar-myaccount ul li a {
-  padding: 30px 0;
+  padding: 23px 0;
   display: flex;
   border-bottom: 1px solid #d9d9d9;
-  font-size: 22px;
+  font-size: 20px;
   align-items: center;
   font-family: "font_bold";
+  display: flex;
+  gap: 15px;
   justify-content: center;
 }
-
+.sidebar-myaccount ul li a img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  object-position: center;
+}
 .sidebar-myaccount ul li.active a {
   background-color: #daf1ff;
   border-bottom: none;
@@ -3938,14 +3968,14 @@
 .fliter-profile-courses .input-profile-courses {
   width: calc(65% - 5%);
 }
-
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 20px;
+  width: 72px;
+  height: 27px;
   margin: 0 !important;
 }
+
 
 .switch input {
   opacity: 0;
@@ -3968,10 +3998,10 @@
 .slider-switch:before {
   position: absolute;
   content: "";
-  height: 16px;
-  width: 26px;
+  height: 21px;
+  width: 35px;
   left: 4px;
-  bottom: 2px;
+  bottom: 3px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -3996,8 +4026,10 @@
   border-radius: 34px;
 }
 
+
+
 .slider-switch.round:before {
-  border-radius: 9px;
+  border-radius: 19px;
 }
 
 .btn-completed {
@@ -4136,14 +4168,57 @@
   opacity: 1;
 }
 
-.main-bookings ul li a {
+.main-bookings > ul > li  {
   display: flex;
   gap: 20px;
+  position: relative;
   padding: 20px 0;
   border-bottom: 1px solid #cdcdcd;
   align-items: self-start;
+  padding-right: 50px;
 }
 
+.dots-bookings {
+  right: 7px;
+  top: 7px;
+  position: absolute;
+}
+.dots-bookings span {
+  font-size: 28px;
+  cursor: pointer;
+}
+.delete-profile  {
+  background-color: #FFEBEB !important;
+}
+.delete-profile:hover  {
+  background-color: #FF3A3A !important;
+}
+.dots-bookings ul {
+  width: 150px;
+  right: 0;
+  z-index: 22;
+  position: absolute;
+  display: none;
+  box-shadow: 0 0 5px #00000029;
+  background-color: var(--color-white);
+}
+
+
+.and-booking {
+  text-align: center;
+  margin: 30px 0;
+}
+.dots-bookings ul li a {
+  padding: 15px  10px;
+  display: flex;
+  justify-content: center;
+  transition: all .3s linear;
+  width: 100%;
+  border-bottom: 1px solid #7070701e;
+}
+.dots-bookings ul li a:hover{
+  background-color: #dfeffc;
+}
 .img-bookings {
   width: 140px;
   height: 90px;
