@@ -3337,6 +3337,9 @@
 .sub-events:hover .img-events img {
   transform: scale(1.1);
 }
+.tabs-events {
+  margin-bottom: 50px;
+}
 
 /* -------------------------------------- */
 /* -------- end style  Upcoming Events -------- */
@@ -3742,15 +3745,14 @@
 }
 
 .sidebar-myaccount ul li a {
-  padding: 23px 0;
-  display: flex;
   border-bottom: 1px solid #d9d9d9;
   font-size: 20px;
   align-items: center;
   font-family: "font_bold";
   display: flex;
   gap: 15px;
-  justify-content: center;
+  padding: 20px 20px;
+  justify-content: start;
 }
 .sidebar-myaccount ul li a img {
   width: 25px;

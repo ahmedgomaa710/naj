@@ -2479,6 +2479,16 @@
   .breadcrump span {
     text-align: center;
   }
+
+  .tabs-events.tabs-bookings ul {
+
+    gap: 0px !important;
+  }
+
+  .tabs-events.tabs-bookings ul li a {
+    height: 100%;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 450px) {
