@@ -4,7 +4,7 @@ AOS.init();
 
 setTimeout(() => {
   $(".loading").fadeOut(1000);
-}, 1000);
+}, 500);
 
 window.onload = function () {
   setTimeout(() => {

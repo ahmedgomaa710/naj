@@ -304,13 +304,13 @@
 }
 
 .element_menu_responsive ul li {
-  transform: translateY(100%);
+  transform: translateY(0%);
   transition: all 0.2s linear;
-  transition-delay: 0.4s;
+  /* transition-delay: 0.4s; */
   display: block;
-  opacity: 0;
+  opacity: 1;
 }
-
+/* 
 .menu_responsive {
   transition-delay: 1s;
 }
@@ -381,6 +381,6 @@
 .menu_responsive.active .element_menu_responsive ul li:nth-of-type(12) {
   transition-delay: 2.6s;
   opacity: 1;
-}
+} */
 
 

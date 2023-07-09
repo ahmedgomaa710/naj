@@ -274,10 +274,10 @@ body::-webkit-scrollbar {
   overflow-x: hidden;
   top: 0;
   align-content: center;
-  right: 0;
+  left: 0;
   transition: all 0.3s linear;
   padding: 25px 0;
-  transform: translateX(102%);
+  transform: translateX(-102%);
 }
 
 .element_menu_responsive>ul {
