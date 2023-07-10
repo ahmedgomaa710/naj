@@ -27,16 +27,20 @@
   color: var(--color-main);
   text-shadow: 2px 6px 3px #7cc2ed52;
 }
+
 .num-counter i {
   margin: 5px;
   font-size: 20px;
 }
+
 .categories-header a img {
   transition: all 0.3s linear;
 }
+
 a.sub-element:hover {
   color: var(--color-main);
 }
+
 .categories-header a.active img {
   transform: rotate(90deg);
 }
@@ -82,7 +86,8 @@ a.sub-element:hover {
   position: relative;
   width: 65%;
 }
-.search-header button:hover{
+
+.search-header button:hover {
   background-color: var(--color-black);
 }
 
@@ -93,9 +98,11 @@ a.sub-element:hover {
   border: 1px solid var(--color-main);
   padding-right: 60px;
 }
+
 a.sub-element:hover {
-    color: var(--color-main);
+  color: var(--color-main);
 }
+
 .search-header button {
   position: absolute;
   top: 5px;
@@ -126,15 +133,18 @@ a.sub-element:hover {
 
 .icons-top-par ul li {
   display: block;
+  position: relative;
 }
 
-.icons-top-par ul li  img{
+.icons-top-par ul li img {
   width: 50%;
   transition: all .3s linear;
 }
+
 #click-categories img {
   max-width: 22px;
 }
+
 .language:hover img {
   filter: brightness(0) invert(1);
 }
@@ -142,6 +152,7 @@ a.sub-element:hover {
 .cart-header:hover img {
   filter: brightness(0) invert(1);
 }
+
 .search-res-header:hover img {
   filter: brightness(0) invert(1);
 }
@@ -212,18 +223,278 @@ a.sub-element:hover {
   color: var(--color-text);
 }
 
-.cart-header {
+.cart-header,
+.notification-header {
   color: var(--color-text);
   border-radius: 50%;
   width: 50px;
   height: 50px;
   display: flex;
+  position: relative;
   align-items: center;
   font-size: 24px;
   justify-content: center;
   border: 1px solid var(--color-text);
 }
 
+a.notification-header>img {
+  width: 60% !important;
+}
+
+.notification-header:hover>img {
+  filter: brightness(0) invert(1);
+
+}
+
+.my-profile-header {
+  position: relative;
+}
+.cont-notification {
+  position: absolute;
+  top: -5px;
+  background: var(--bg-1);
+  font-size: 16px;
+  width: 20px;
+  right: -8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  color: var(--color-a);
+  position: relative;
+  font-size: 19px;
+}
+
+.icon-user img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.icon-user i {
+  font-size: 19px;
+  line-height: 0;
+  padding-top: 5px;
+}
+
+
+
+.notification-dropdown {
+  background-color: var(--color-white);
+  padding: 20px 0 0;
+  display: none;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  top: 140%;
+  z-index: 5;
+  width: 350px;
+  box-shadow: 0px 4px 3px #00000021;
+  max-height: 530px;
+  overflow: auto;
+}
+
+.notification-dropdown {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.notification-dropdown::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.notification-dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 0;
+  border: 0 solid var(--scrollbarBG);
+}
+
+.notification-dropdown::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sub-profile-details-dropdown ul li:hover a {
+  color: var(--color-main);
+}
+
+.title-notification-dropdown {
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.title-notification-dropdown h2 {
+  font-size: 20px;
+  color: var(--color-a);
+  font-family: "font_bold";
+}
+
+.title-notification-dropdown>span {
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  color: #758494;
+}
+
+.sub-notification-dropdown {
+  padding: 20px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.sub-notification-dropdown h4 {
+  width: 90%;
+  margin: auto;
+  color: var(--bg-1);
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.sub-notification-dropdown ul {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.sub-notification-dropdown ul li {
+  width: 100%;
+  display: flex;
+}
+
+.sub-notification-dropdown ul li a {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sub-notification-dropdown ul li img {
+  width: 62px;
+}
+
+.sub-notification-dropdown ul li p {
+  font-size: 16px;
+  line-height: 20px;
+  height: 45px;
+  color: var(--color-main);
+  overflow: hidden;
+}
+.not-found-notification {
+  display: none;
+
+}
+
+.sub-not-found-notification {
+  width: 90%;
+  padding: 90px 0;
+  margin: auto;
+  text-align: center;
+}
+
+.sub-not-found-notification h2 {
+  font-family: "font_bold";
+  margin-top: 20px;
+  color: var(--color-a);
+  font-size: 22px;
+}
+
+.profile-details-dropdown {
+  background-color: var(--color-white);
+  padding: 20px 0 0;
+  display: none;
+  position: absolute;
+  top: 150%;
+  z-index: 5;
+  right:0;
+  width: 350px;
+  box-shadow: 0px 4px 3px #00000021;
+  max-height: 530px;
+  overflow: auto;
+}
+
+.profile-details-dropdown {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.profile-details-dropdown::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.profile-details-dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 0;
+  border: 0 solid var(--scrollbarBG);
+}
+
+.profile-details-dropdown::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sub-profile-details-dropdown ul li:hover a {
+  color: var(--color-button);
+}
+.title-user-dropdown {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.title-user-dropdown img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title-user-dropdown span {
+  font-size: 18px;
+  font-family: "font_bold";
+}
+.sub-profile-details-dropdown {
+  padding: 20px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.sub-profile-details-dropdown ul {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sub-profile-details-dropdown ul li {
+  width: 100%;
+}
+.sub-profile-details-dropdown ul li a {
+  display: flex;
+  color: #758494;
+  font-size: 17px;
+  gap: 20px;
+  transition: all 0.3s linear;
+}
+
+.sub-profile-details-dropdown ul li a img {
+  object-fit: contain;
+  width: 21px;
+}
 .links-login a {
   border-radius: 35px;
   background-color: var(--color-main);
@@ -245,7 +516,7 @@ a.sub-element:hover {
 
 .text-sub-header h1 {
   font-size: 40px;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -272,7 +543,7 @@ a.sub-element:hover {
   color: var(--color-white);
   min-width: 170px;
   font-family: "font_medium";
-  text-transform: uppercase ;
+  text-transform: uppercase;
   transition: all 0.3s linear;
   background-color: var(--color-main);
   height: 50px;
@@ -285,7 +556,7 @@ a.sub-element:hover {
   border-radius: 30px;
   text-align: center;
   color: var(--color-main);
-  text-transform: uppercase ;
+  text-transform: uppercase;
   min-width: 170px;
   transition: all 0.3s linear;
   background-color: var(--color-white);
@@ -359,7 +630,7 @@ a.sub-element:hover {
   background-color: var(--color-white);
   border-radius: 10px;
   border: 1px solid #7070701e;
-  z-index: 22;
+  z-index: 5;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -693,7 +964,7 @@ a.sub-element:hover {
 
 .title-pages {
   background-color: var(--color-main);
-  height: 300px ;
+  height: 300px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -702,8 +973,8 @@ a.sub-element:hover {
   gap: 20px;
   flex-wrap: wrap;
   position: relative;
-  padding: 40px ;
-  
+  padding: 40px;
+
 }
 
 .title-pages::after {
@@ -720,6 +991,7 @@ a.sub-element:hover {
   position: absolute;
   z-index: -1;
 }
+
 .title-pages h1 {
   font-size: 35px;
   width: 100%;
@@ -742,15 +1014,18 @@ a.sub-element:hover {
   gap: 10px;
   flex-wrap: wrap;
 }
+
 .breadcrump a {
   font-size: 24px;
   color: var(--color-white);
   transition: all .3s linear;
 }
+
 .breadcrump a:hover {
   color: var(--bg-1);
 }
-.breadcrump  i {
+
+.breadcrump i {
   font-size: 19px;
 }
 
@@ -772,4 +1047,3 @@ span.cont-header {
   align-items: center;
   border-radius: 50%;
 }
-

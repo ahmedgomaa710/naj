@@ -20,6 +20,8 @@ $(".click-dropdown-mune").click(function (e1) {
 $(".language").click(function (e) {
   e.preventDefault();
   $(".dropdowm-language").slideToggle();
+  $(".notification-dropdown").slideUp();
+
 });
 $(".sub-progress-video").click(function (e) {
   e.preventDefault();
@@ -29,6 +31,12 @@ $(".language-footer a").click(function (e) {
   e.preventDefault();
   $(".dropdowm-language-f").slideToggle();
 });
+
+
+
+
+
+
 
 $(".cart-header").click(function (e) {
   e.preventDefault();
@@ -47,6 +55,39 @@ $(".delete-mybooking").click(function (e) {
   e.preventDefault();
   $(this).parents(".main-bookings ul li").slideUp();
 });
+
+
+
+$(".icon-user").click(function (e) {
+  e.preventDefault();
+  $(".profile-details-dropdown").slideToggle();
+  $(".notification-dropdown").fadeOut();
+});
+
+
+
+$(".notification-header").click(function (e) {
+  e.preventDefault();
+  $(".notification-dropdown").slideToggle();
+  $(".profile-details-dropdown").fadeOut();
+  $(".dropdowm-language").slideUp();
+});
+
+$(".title-notification-dropdown").on("click", function (e) {
+  e.preventDefault();
+  $(".sub-notification-dropdown").fadeOut();
+
+  $(".not-found-notification").fadeIn();
+});
+
+
+
+
+
+
+
+
+
 
 //silder-prodect-details
 if ($("#slider-product-details").length) {
@@ -212,7 +253,9 @@ function close() {
   $(".bg_menu").removeClass("active");
   $(".dropdowm-language").slideUp();
   $(".dropdowm-language-f").slideUp();
+  $(".notification-dropdown").slideUp();
   $(".main-categories-header").slideUp();
+  $(".profile-details-dropdown").slideUp();
   // $(".cart-index").removeClass("active");
   $(".main-categories-res").removeClass("active");
   $(".sub-categories-res").removeClass("active");
@@ -256,7 +299,7 @@ $("#menu-div a").click(function () {
 
 var $winl = $(window); // or $box parent container
 var $boxl = $(
-  "#menu-div, #times-ican , #times-icon2 , .main-categories-res  , .cart-index ,.cart-header, .language-footer a , .dropdowm-language , .dropdowm-language-f , #click-categories , .language , .main-categories-header , .click-element-mune , .dropdowm-element-mune"
+  "#menu-div, #times-ican , #times-icon2 ,.notification-header ,.icon-user , .profile-details-dropdown ,.notification-dropdown , .main-categories-res  , .cart-index ,.cart-header, .language-footer a , .dropdowm-language , .dropdowm-language-f , #click-categories , .language , .main-categories-header , .click-element-mune , .dropdowm-element-mune"
 );
 $winl.on("click.Bst", function (event) {
   if (
@@ -356,53 +399,7 @@ if ($(".counter").length) {
 }
 // ----------------------
 
-// typing title
-var txtType = function (el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 5) || 200;
-  this.txt = "";
-  this.tick();
-  this.isDeleting = false;
-};
-txtType.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-  var that = this;
-  var delta = 200 - Math.random() * 100;
-  if (this.isDeleting) {
-    delta /= 2;
-  }
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-  setTimeout(function () {
-    that.tick();
-  }, delta);
-};
-window.onload = function () {
-  var elements = document.getElementsByClassName("typewrite");
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute("data-type");
-    var period = elements[i].getAttribute("data-period");
-    if (toRotate) {
-      new txtType(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-};
-// ===========================================
+
 
 // categories
 if (window.screen.width >= 992) {
