@@ -3297,14 +3297,17 @@
   gap: 20px;
   justify-content: space-between;
 }
+
 .sub-name-events h3 {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .sub-name-events h3 svg {
   color: var(--bg-1);
 }
+
 .sub-text-events {
   width: 100%;
 }
@@ -3760,6 +3763,8 @@
   max-height: 120px;
 }
 
+
+
 /* .delete-myaccount .ctm-btn2 {
   height: 70px;
   background-color: transparent;
@@ -3783,6 +3788,43 @@
   color: var(--color-main);
 } */
 
+
+
+.img-sidebar-myaccount {
+  width: 110px;
+  margin: auto;
+  border-radius: 50%;
+  height: 110px;
+  padding: 8px;
+  border: 2px solid var(--color-white);
+}
+
+.img-sidebar-myaccount img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.text-sidebar-myaccount h2 {
+  font-size: 21px;
+  margin: 5px 0;
+  font-family: "font_bold";
+  color: var(--color-white);
+}
+
+.text-sidebar-myaccount p {
+  color: var(--bg-1);
+  font-size: 19px;
+}
+
+.sub-sidebar-myaccount {
+  background: var(--color-main);
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .main-myaccount {
   margin-top: 100px;
 }
@@ -3794,7 +3836,7 @@
 }
 
 .sidebar-myaccount ul li a {
-  border-bottom: 1px solid #d9d9d9;
+  /* border-bottom: 1px solid #d9d9d9; */
   font-size: 20px;
   align-items: center;
   font-family: "font_bold";
@@ -3830,6 +3872,7 @@
   box-shadow: 0 2px 5px #0000002c;
   border-radius: 20px;
   overflow: hidden;
+  min-height: 100%;
   padding: 20px 40px;
 }
 
