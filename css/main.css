@@ -1125,6 +1125,35 @@
   background-color: #dfeffc;
 }
 
+.services-index .owl-nav {
+  display: flex;
+  right: 0;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+.services-index .owl-prev {
+  transform: scaleX(-1) translateX(25px);
+}
+
+.services-index .owl-next {
+  transform: translateX(25px);
+
+}
+
+.btn-more {
+  width: 100%;
+  text-align: end;
+  margin: 40px 0 0;
+}
+
+.news-index .title-start {
+  margin-bottom: 60px;
+}
+
 /* start style  aboutus ================================
 ========================================
 ================ */
@@ -3262,6 +3291,24 @@
 /* -------- start style  Upcoming Events -------- */
 /* -------------------------------------- */
 
+.sub-name-events {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.sub-name-events h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sub-name-events h3 svg {
+  color: var(--bg-1);
+}
+.sub-text-events {
+  width: 100%;
+}
+
 .events .row {
   row-gap: 25px;
 }
@@ -3337,6 +3384,7 @@
 .sub-events:hover .img-events img {
   transform: scale(1.1);
 }
+
 .tabs-events {
   margin-bottom: 50px;
 }
@@ -3708,9 +3756,10 @@
   margin-top: 5px;
 }
 
-.barcode-myaccount{
+.barcode-myaccount {
   max-height: 120px;
 }
+
 /* .delete-myaccount .ctm-btn2 {
   height: 70px;
   background-color: transparent;
@@ -3754,12 +3803,14 @@
   padding: 20px 20px;
   justify-content: start;
 }
+
 .sidebar-myaccount ul li a img {
   width: 25px;
   height: 25px;
   object-fit: contain;
   object-position: center;
 }
+
 .sidebar-myaccount ul li.active a {
   background-color: #daf1ff;
   border-bottom: none;
@@ -3970,6 +4021,7 @@
 .fliter-profile-courses .input-profile-courses {
   width: calc(65% - 5%);
 }
+
 .switch {
   position: relative;
   display: inline-block;
@@ -4170,7 +4222,7 @@
   opacity: 1;
 }
 
-.main-bookings > ul > li  {
+.main-bookings>ul>li {
   display: flex;
   gap: 20px;
   position: relative;
@@ -4185,16 +4237,20 @@
   top: 7px;
   position: absolute;
 }
+
 .dots-bookings span {
   font-size: 28px;
   cursor: pointer;
 }
-.delete-profile  {
+
+.delete-profile {
   background-color: #FFEBEB !important;
 }
-.delete-profile:hover  {
+
+.delete-profile:hover {
   background-color: #FF3A3A !important;
 }
+
 .dots-bookings ul {
   width: 150px;
   right: 0;
@@ -4210,17 +4266,20 @@
   text-align: center;
   margin: 30px 0;
 }
+
 .dots-bookings ul li a {
-  padding: 15px  10px;
+  padding: 15px 10px;
   display: flex;
   justify-content: center;
   transition: all .3s linear;
   width: 100%;
   border-bottom: 1px solid #7070701e;
 }
-.dots-bookings ul li a:hover{
+
+.dots-bookings ul li a:hover {
   background-color: #dfeffc;
 }
+
 .img-bookings {
   width: 140px;
   height: 90px;
