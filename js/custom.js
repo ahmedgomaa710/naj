@@ -21,7 +21,6 @@ $(".language").click(function (e) {
   e.preventDefault();
   $(".dropdowm-language").slideToggle();
   $(".notification-dropdown").slideUp();
-
 });
 $(".sub-progress-video").click(function (e) {
   e.preventDefault();
@@ -32,15 +31,11 @@ $(".language-footer a").click(function (e) {
   $(".dropdowm-language-f").slideToggle();
 });
 
-
-
-
-
-
-
 $(".cart-header").click(function (e) {
   e.preventDefault();
+  
   $(".cart-index").toggleClass("active");
+  $(".bg_menu-cart").toggleClass("active");
 });
 $(".dots-bookings > span").click(function (e) {
   e.preventDefault();
@@ -56,15 +51,11 @@ $(".delete-mybooking").click(function (e) {
   $(this).parents(".main-bookings ul li").slideUp();
 });
 
-
-
 $(".icon-user").click(function (e) {
   e.preventDefault();
   $(".profile-details-dropdown").slideToggle();
   $(".notification-dropdown").fadeOut();
 });
-
-
 
 $(".notification-header").click(function (e) {
   e.preventDefault();
@@ -79,15 +70,6 @@ $(".title-notification-dropdown").on("click", function (e) {
 
   $(".not-found-notification").fadeIn();
 });
-
-
-
-
-
-
-
-
-
 
 //silder-prodect-details
 if ($("#slider-product-details").length) {
@@ -256,7 +238,6 @@ function close() {
   $(".notification-dropdown").slideUp();
   $(".main-categories-header").slideUp();
   $(".profile-details-dropdown").slideUp();
-  // $(".cart-index").removeClass("active");
   $(".main-categories-res").removeClass("active");
   $(".sub-categories-res").removeClass("active");
 
@@ -399,8 +380,6 @@ if ($(".counter").length) {
 }
 // ----------------------
 
-
-
 // categories
 if (window.screen.width >= 992) {
   $("#click-categories").click(function (e) {
@@ -516,8 +495,14 @@ $(".input-payment-method").click(function (e) {
     $(this).removeClass("active");
     $(".form-payment").slideUp();
   } else {
-    $(".input-payment-method").removeClass("active")
+    $(".input-payment-method").removeClass("active");
     $(this).addClass("active");
     $(this).next().slideDown();
   }
+});
+
+$(".bg_menu-cart").click(function (e) {
+  e.preventDefault();
+  $(".bg_menu-cart").removeClass("active")
+  $(".cart-index").removeClass("active");
 });
