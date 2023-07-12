@@ -7,7 +7,6 @@
     gap: 11px;
   }
 
-
   .element a {
     font-size: 19px;
     gap: 5px;
@@ -29,7 +28,6 @@
     width: 45px;
     height: 45px;
   }
-
 }
 
 @media (min-width: 1400px) {
@@ -52,6 +50,16 @@
   }
 
 
+  .sub-name-events {
+    gap: 10px;
+  }
+  .sub-name-events h3 {
+    font-size: 14px;
+}
+.sub-name-events .name-doc img {
+  width: 30px !important;
+  height: 30px;
+}
   .top-par-users .icons-top-par ul {
     gap: 7px;
   }
@@ -250,7 +258,7 @@
     font-size: 28px;
   }
 
-  .text-products-index>h2 {
+  .text-products-index > h2 {
     font-size: 23px;
     width: 85%;
     margin: 30px 0 15px;
@@ -271,7 +279,7 @@
     height: 230px;
   }
 
-  .text-products-index>p {
+  .text-products-index > p {
     font-size: 17px;
   }
 
@@ -692,7 +700,7 @@
     font-size: 17px;
   }
 
-  .sub-curriculum>h2 {
+  .sub-curriculum > h2 {
     height: 70px;
     font-size: 17px;
   }
@@ -755,7 +763,7 @@
     font-size: 15px;
   }
 
-  .text-products-index>h2 {
+  .text-products-index > h2 {
     font-size: 21px;
     width: 100%;
     margin: 15px 0 15px;
@@ -944,9 +952,8 @@
 }
 
 @media (max-width: 992px) {
-
-  .icon-user>span,
-  .icon-user>i {
+  .icon-user > span,
+  .icon-user > i {
     display: none;
   }
 
@@ -968,9 +975,6 @@
     justify-content: center;
     border: 1px solid var(--color-white);
   }
-
-
-
 
   .order-tracking ul li {
     flex-wrap: wrap;
@@ -1133,12 +1137,12 @@
     margin: 10px 0;
   }
 
-  .main-categories-header>ul>li {
+  .main-categories-header > ul > li {
     padding: 0 0px;
     width: 100%;
   }
 
-  .main-categories-header>ul>li>a {
+  .main-categories-header > ul > li > a {
     color: var(--color-white);
     padding: 10px 20px;
     background: var(--color-main);
@@ -1206,7 +1210,7 @@
     margin: 20px 0;
   }
 
-  .element_menu_responsive>ul>li {
+  .element_menu_responsive > ul > li {
     margin: 25px 0;
   }
 
@@ -1398,7 +1402,6 @@
     width: 17%;
   }
 
-
   .order-tracking ul {
     width: 100%;
     gap: 20px;
@@ -1415,7 +1418,6 @@
     flex-wrap: wrap;
     justify-content: start;
   }
-
 
   .main-cart .table thead tr th:nth-of-type(1) {
     width: 60%;
@@ -1519,7 +1521,7 @@
     font-size: 16px;
   }
 
-  .text-achievements-details>ul>li::after {
+  .text-achievements-details > ul > li::after {
     top: 7px;
   }
 
@@ -1687,11 +1689,9 @@
   .notification-dropdown {
     right: -85px;
     width: 300px;
-
   }
 
   .profile-details-dropdown {
-
     right: -40px;
     width: 300px;
   }
@@ -1916,8 +1916,21 @@
   }
 
   .sidebar-myaccount ul li a {
-    padding: 15px 0;
+    padding: 15px;
     font-size: 15px;
+  }
+
+  .img-sidebar-myaccount {
+    width: 95px;
+    height: 96px;
+  }
+
+  .text-sidebar-myaccount h2 {
+    font-size: 18px;
+  }
+  .text-sidebar-myaccount p {
+    line-height: 25px;
+    font-size: 17px;
   }
 
   input.form-control::placeholder {
@@ -2025,7 +2038,7 @@
     margin: 10px 0 0;
   }
 
-  .main-authors-details>p {
+  .main-authors-details > p {
     margin: 50px 0;
     font-size: 17px;
     line-height: 30px;
@@ -2256,7 +2269,7 @@
     width: 300px;
   }
 
-  .element_menu_responsive>ul>li>a {
+  .element_menu_responsive > ul > li > a {
     font-size: 17px;
   }
 
@@ -2518,7 +2531,7 @@
     font-size: 16px;
   }
 
-  .select-payment-method>h2 {
+  .select-payment-method > h2 {
     margin-bottom: 15px;
     font-size: 17px;
   }
@@ -2573,7 +2586,6 @@
   }
 
   .tabs-events.tabs-bookings ul {
-
     gap: 0px !important;
   }
 
