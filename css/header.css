@@ -1018,6 +1018,7 @@ a.notification-header>img {
 .breadcrump a {
   font-size: 24px;
   color: var(--color-white);
+  display: block;
   transition: all .3s linear;
 }
 

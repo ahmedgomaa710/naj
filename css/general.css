@@ -130,7 +130,7 @@ img,
 
 ::selection {
   color: #FFF !important;
-  background-color: var(--color-main) !important;
+  background-color: #0c3999 !important;
 }
 
 body {

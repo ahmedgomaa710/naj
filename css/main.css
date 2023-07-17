@@ -1271,7 +1271,12 @@
   line-height: 36px;
   font-family: "font_medium";
 }
-
+.services-index .owl-nav {
+  pointer-events: none; 
+}
+.services-index .owl-nav  button {
+  pointer-events: fill;
+}
 /* ------------------------------------------ */
 /* --------- end aboutus      --------  */
 /* ------------------------------------------ */

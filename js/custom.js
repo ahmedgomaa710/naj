@@ -249,6 +249,7 @@ function close() {
   });
 }
 $(".close-cart-index").click(function () {
+  $(".bg_menu-cart").removeClass("active")
   $(".cart-index").removeClass("active");
 });
 $("#times-ican").click(function () {
