@@ -377,7 +377,7 @@
 
 .links-products-tabs ul li a::after {
   content: "";
-  width: 100%;
+  width: 50%;
   height: 4px;
   background-color: var(--bg-2);
   border-radius: 5px;
@@ -389,6 +389,20 @@
   transition: all 0.3s linear;
 }
 
+.links-products-tabs ul li a::before {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: var(--bg-2);
+  border-radius: 5px;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
 .links-products-tabs ul li a.active {
   color: var(--bg-1) !important;
   text-shadow: 0 5px 3px #0b296b1f;
@@ -396,7 +410,8 @@
   background-color: transparent !important;
 }
 
-.links-products-tabs ul li a.active::after {
+.links-products-tabs ul li a.active::after,
+.links-products-tabs ul li a.active::before {
   transform: translateX(0);
   opacity: 1;
 }
@@ -1271,12 +1286,15 @@
   line-height: 36px;
   font-family: "font_medium";
 }
+
 .services-index .owl-nav {
-  pointer-events: none; 
+  pointer-events: none;
 }
-.services-index .owl-nav  button {
+
+.services-index .owl-nav button {
   pointer-events: fill;
 }
+
 /* ------------------------------------------ */
 /* --------- end aboutus      --------  */
 /* ------------------------------------------ */
